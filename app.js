@@ -23,11 +23,27 @@ app.locals = {
 };
 
 app.get("/", function(req, res) {
-    res.render("index");
+    res.render("template");
 });
 
 app.get("*", function(req, res, next) {
     res.redirect("/");
+});
+
+app.post("/home/", function(req, res, next) {
+    res.render("partials/index");
+});
+
+app.post("/about/", function(req, res, next) {
+    res.render("partials/soon");
+});
+
+app.post("/projects/", function(req, res, next) {
+    res.render("partials/soon");
+});
+
+app.post("/contact/", function(req, res, next) {
+    res.render("partials/soon");
 });
 
 var server = app.listen(config.app.port, function() {
