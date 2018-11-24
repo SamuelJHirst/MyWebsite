@@ -39,7 +39,7 @@ app.post("/about/", function(req, res, next) {
 });
 
 app.post("/projects/", function(req, res, next) {
-    res.render("partials/soon");
+    res.render("partials/projects");
 });
 
 app.post("/contact/", function(req, res, next) {
