@@ -1,0 +1,50 @@
+<div class="jumbotron vertical-center">
+  <div class="container">
+    <div class="row" style="background-color: #F9F9FF; width: calc(100% - 30px); padding: 30px; margin-left: 15px;">
+        <div class="col-sm-12 text-center">
+            <a href="#!" class="btn btn-outline-dark" id="projects" style="position: absolute; right: 0;">Back</a>
+        </div>
+        <br />
+        <div class="col-4" style="padding: 0;">
+            <h2>{{ title }}</h2>
+            <p>{{ intro }}</p>
+            <hr />
+            <table style="width: 100%;">
+                <tbody style="width: 100%;">
+                    <tr>
+                        <th style="padding-right: 5px;">Status:</th>
+                        <td style="padding-right: 5px;">{{ status }}</td>
+                    </tr>
+                    <tr>
+                        <th style="padding-right: 5px;">Project Start:</th>
+                        <td style="padding-right: 5px;">{{ start }}</td>
+                    </tr>
+                    <tr>
+                        <th style="padding-right: 5px;">Project End:</th>
+                        <td style="padding-right: 5px;">{{ end }}</td>
+                    </tr>
+                    <tr>
+                        <th style="padding-right: 5px;">Code:</th>
+                        <td style="padding-right: 5px;"><a href="{{ repo }}">On GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-right: 5px;">Showcase:</th>
+                        {% if showcase %}
+                            <td style="padding-right: 5px;"><a href="{{ showcase }}">{{ showcase }}</a></td>
+                        {% else %}
+                            <td style="padding-right: 5px;">None</td>
+                        {% endif %}
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-8" style="padding: 0;">
+            <h4>Description</h4>
+            <p>{{ description }}</p>
+            <br />
+            <h4>Review</h4>
+            <p>{{ review }}</p>
+        </div>
+    </div>
+  </div>
+</div>

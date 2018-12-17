@@ -79,3 +79,21 @@ $(document).delegate("#contact", "click", function() {
         });
     });
 });
+
+$(document).delegate("#project", "click", function() {
+    var project = $(this).data("project");
+    window.history.pushState("", "", "/project/" + project + "/");
+    $("a").css("cursor", "default");
+    $.post("/project/", {
+        project: project
+    }, function(resp) {
+        $("body").css("overflow", "hidden");
+        $("#content").hide("slide", { direction: "left" }, 500, function() {
+            $("#content").html(resp);
+            $("#content").show("slide", { direction: "right" }, 500, function() {
+                $("body").css("overflow", "auto");
+                $("a").css("cursor", "pointer");
+            });
+        });
+    });
+});

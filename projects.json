@@ -1,0 +1,45 @@
+[
+    {
+        "title": "hirst.xyz",
+        "intro": "My own personal website for my online portfolio.",
+        "status": "Live",
+        "start": "November 2018",
+        "end": "-",
+        "repo": "https://github.com/SamuelJHirst/MyWebsite",
+        "showcase": "https://hirst.xyz",
+        "description": "The aim of this website was to create a landing page for my domain. I wanted to use it to give a brief introduction to myself and what I do, as well as showcasing my projects. Hopefully this will be a good reference point in future which I can show to people when introducing some of my past work.",
+        "review": "This project was relatively straight forward. The hardest part was getting a format which I liked. I wanted to try a system where there is no loading or page refreshing - only smooth transitions between pages. While this wasn't as easy, I'm happy with how it's turned out."
+    },
+    {
+        "title": "Tameside Hackathon - October 2018",
+        "intro": "A website to showcase products made by Brother UK in 2068.",
+        "status": "Archived",
+        "start": "October 2018",
+        "end": "October 2018",
+        "repo": "https://github.com/SamuelJHirst/Hackathon-18",
+        "showcase": "https://hack18.hirst.xyz",
+        "description": "This was an entry to a Hackathon competition. Our task was to create a Brother product in the year 2068 and present it in a creative way. The purpose of this website was to fulfil the latter part of the brief. Even though it won us \"Best in Show\", it wasn't quite enough to give us a win for the task!",
+        "review": "Although this is unfinished due to time limitations, I'm happy with how it turned out. It was the first time I had properly used Bootstrap's CSS libraries, which caused the odd problem here and there. Sadly it just wasn't a winner on this occassion!"
+    },
+    {
+        "title": "Insight Feedback",
+        "intro": "A proof of concept of a system for teachers to give students feedback.",
+        "status": "Arhived",
+        "start": "March 2017",
+        "end": "April 2017",
+        "repo": "https://github.com/SamuelJHirst/Insight-Feedback",
+        "showcase": "https://feedback.hirst.xyz",
+        "description": "This project is the oldest one which appears within my portfolio. Unlike most other things here, it wasn't made by me for me, but instead was for my then-girlfriend to demonstrate a system which she wanted to see implemented into her school.",
+        "review": "I never really finished this project. Looking back on it, there are a lot of infrastructure problems which ultimately came back to bite me and there are lots of bugs still hiding in there. Given my skill level at the time though, I'm happy with how it turned out."
+    },
+    {
+        "title": "Redirects",
+        "intro": "A link redirects system developed for my own personal use.",
+        "status": "Live",
+        "start": "November 2018",
+        "end": "-",
+        "repo": "https://github.com/SamuelJHirst/Redirects",
+        "description": "One of the things that I wanted to have when I bought my domain was a link shortening service. I have made something similar in the past, so thought it wouldn't be too much work to make one of my own. I continue to use it on this domain and others.",
+        "review": "This was a nice and straight forward project. I don't know of any bugs with it. Unlike most projects, I used Bootstrap CSS, allowing me to get a better understanding of it."
+    }
+]
