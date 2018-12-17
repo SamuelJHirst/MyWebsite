@@ -35,7 +35,7 @@ app.post("/home/", function(req, res, next) {
 });
 
 app.post("/about/", function(req, res, next) {
-    res.render("partials/soon");
+    res.render("partials/about");
 });
 
 app.post("/projects/", function(req, res, next) {
@@ -43,7 +43,7 @@ app.post("/projects/", function(req, res, next) {
 });
 
 app.post("/contact/", function(req, res, next) {
-    res.render("partials/soon");
+    res.render("partials/contact");
 });
 
 var server = app.listen(config.app.port, function() {
