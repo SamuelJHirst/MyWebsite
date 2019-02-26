@@ -24,13 +24,46 @@
     {
         "title": "Insight Feedback",
         "intro": "A proof of concept of a system for teachers to give students feedback.",
-        "status": "Arhived",
+        "status": "Archived",
         "start": "March 2017",
         "end": "April 2017",
         "repo": "https://github.com/SamuelJHirst/Insight-Feedback",
         "showcase": "https://feedback.hirst.xyz",
         "description": "This project is the oldest one which appears within my portfolio. Unlike most other things here, it wasn't made by me for me, but instead was for my then-girlfriend to demonstrate a system which she wanted to see implemented into her school.",
         "review": "I never really finished this project. Looking back on it, there are a lot of infrastructure problems which ultimately came back to bite me and there are lots of bugs still hiding in there. Given my skill level at the time though, I'm happy with how it turned out."
+    },
+    {
+        "title": "Computer Science HTML Project - December 2018",
+        "intro": "A website created in a series of Computer Science lessons as part of the A-Level specification.",
+        "status": "Archived",
+        "start": "December 2018",
+        "end": "December 2018",
+        "repo": "https://github.com/SamuelJHirst/CS-18",
+        "showcase": "https://cs18.hirst.xyz",
+        "description": "This project was a task set in a Computer Science lesson. Without using any major coding libraries (including JQuery), my task was to make a nine-page website covering some of the Wonders of the World. It also needed to include a form with validation.",
+        "review": "Considering that this is one of the few projects on here which doesn't make use of major coding libraries, I would say that this project has gone well. I particularly like the navigation system which I created."
+    },
+    {
+        "title": "Koda",
+        "intro": "Koda is a personal Discord bot. It's not built to do anything particularly special - just to be a bit of fun.",
+        "status": "Live",
+        "start": "Janurary 2019",
+        "end": "-",
+        "repo": "https://github.com/SamuelJHirst/Koda",
+        "showcase": "https://koda.hirst.xyz",
+        "description": "This project was intended to be a bot for a specific college server. I wanted it to have some of the games which I have included in past bots I have created, as well as some additional functions such as reminders. It was also designed to have a strong access levels system.",
+        "review": "I think it could still do with some more features which people usually like on Discord servers. For example, music services are popular - as well as commands which make use of APIs to embed images and audio. So far though, I'd say this is a fun and useful system."
+    },
+    {
+        "title": "Tameside Hackathon - February 2019",
+        "intro": "A calendar which can plan out how to get to a place and at what point you should set off.",
+        "status": "Archived",
+        "start": "February 2019",
+        "end": "February 2019",
+        "repo": "https://github.com/SamuelJHirst/Hackathon-19",
+        "showcase": "https://hack19.hirst.xyz",
+        "description": "This was an entry to a Hackathon competition. Our task was to create something which used API data to improve daily life. So, we made use of Google's API libraries to create a calendar which can calculate how soon in advance you should set off and how to get there. It will also send SMS notifications 15 minutes before the user needs to set off. Unfortunately, this, and the system to add new events are disabled in the showcase.",
+        "review": "Although this is not as polished as I would like due to time restrictions, I am happy with how this turned out. Assuming that the system is not abused, I have not come across any bugs with the system. It also won us the challenge so I think that says enough about it!"
     },
     {
         "title": "Redirects",
