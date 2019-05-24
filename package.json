@@ -1,6 +1,6 @@
 {
   "name": "MyWebsite",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "The landing page for my website.",
   "main": "app.js",
   "dependencies": {
@@ -14,7 +14,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/SamuelJHirst/MyWebsite.git"
+    "url": "https://github.com/Naeviant/MyWebsite.git"
   },
   "author": "Sam Hirst",
   "license": "ISC"

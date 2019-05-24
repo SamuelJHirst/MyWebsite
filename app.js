@@ -24,39 +24,23 @@ app.locals = {
 };
 
 app.get("/", function(req, res) {
-    res.render("template");
+    res.render("index");
 });
 
 app.get("*", function(req, res, next) {
     res.redirect("/");
 });
 
-app.post("/home/", function(req, res, next) {
-    res.render("partials/index");
-});
-
-app.post("/about/", function(req, res, next) {
-    res.render("partials/about");
-});
-
-app.post("/projects/", function(req, res, next) {
-    res.render("partials/projects");
-});
-
-app.post("/contact/", function(req, res, next) {
-    res.render("partials/contact");
-});
-
 app.post("/project/", function(req, res, next) {
     for (var project of projects) {
         if (project.title == req.body.project) {
             var found = true;
-            res.render("partials/project", project);
+            res.render("project_partial", project);
             break;
         }
     }
     if (!found) {
-        res.render("partials/404");
+        res.sendStatus(404);
     }
 });
 
