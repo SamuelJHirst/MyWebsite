@@ -35,6 +35,40 @@
         "languages": ["HTML", "CSS", "Materialize", "JavaScript", "NodeJS", "Express", "JQuery", "MongoDB"]
     },
     {
+        "title": "The Hat",
+        "intro": "A \"names out of a hat\" randomiser.",
+        "status": "Maintained",
+        "start": "August 2020",
+        "end": "Present",
+        "repo": "https://github.com/Naeviant/The-Hat",
+        "description": "The Hat is a program that was around when I was very young. Having looked at it again more recently, I was shocked to discovered it was now generally flagged as malware and was no longer available. So I decided to remake it. The program works by writing a list of names to go in the hat, and then drawing them one by one.",
+        "review": "Although I had used the Windows Forms framework before, I had never used C# or any other C langauge before. I am pleased that I was able to put something working together, although of course I will need to undertake something more complex to have a solid understanding of the language.",
+        "languages": ["C#", "Windows Forms"]
+    },
+    {
+        "title": "Assistant",
+        "intro": "A program designed to track various school-related things for myself.",
+        "status": "Deprecated",
+        "start": "August 2020",
+        "end": "Present",
+        "repo": "https://github.com/Naeviant/Assistant",
+        "description": "This project was intended to help me organise things for school - most notably homework. It offers a clean interface to input records related to homework, which are then displayed in a table. This table can then be filtered by any field, downloaded as a CSV and more.",
+        "review": "Although listed here as being started in August 2020, this project is actually much older. Variations of this application were among the first ones that I made. The version now available is somewhat remastered, but still contains imperfections that are a sign of my experience at the time.",
+        "languages": ["VB.net", "Windows Forms"]
+    },
+    {
+        "title": "ToDo List",
+        "intro": "A simple to do list application.",
+        "status": "Maintained",
+        "start": "August 2020",
+        "end": "Present",
+        "repo": "https://github.com/Naeviant/ToDo",
+        "showcase": "https://todo.hirst.xyz",
+        "description": "This project is a simple todo list. You can add as many items as you like, and then cross then off as you go using a checkbox. When you're done with a todo and wish to remove it from the list, there is a button to do so.",
+        "review": "This project began on a work experience day I completed in Purple WiFi where we were walked through how to do this by two employees. One year later, I have recreated this independently using extra features - such as the addition of local storage to save the todos.",
+        "languages": ["HTML", "CSS", "JavaScript", "ReactJS"]
+    },
+    {
         "title": "Tameside Hackathon - October 2018",
         "intro": "A website to showcase products made by Brother UK in 2068.",
         "status": "Deprecated",
@@ -45,30 +79,6 @@
         "description": "This was an entry to a Hackathon competition. Our task was to create a Brother product in the year 2068 and present it in a creative way. The purpose of this website was to fulfil the latter part of the brief. Even though it won us \"Best in Show\", it wasn't quite enough to give us a win for the task!",
         "review": "Although this is unfinished due to time limitations, I'm happy with how it turned out. It was the first time I had properly used Bootstrap's CSS libraries, which caused the odd problem here and there. Sadly it just wasn't a winner on this occassion!",
         "languages": ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS", "Express", "JQuery"]
-    },
-    {
-        "title": "Insight Feedback",
-        "intro": "A proof of concept of a system for teachers to give students feedback.",
-        "status": "Deprecated",
-        "start": "March 2017",
-        "end": "April 2017",
-        "repo": "https://github.com/Naeviant/Insight-Feedback",
-        "showcase": "https://feedback.hirst.xyz",
-        "description": "This project is the oldest one which appears within my portfolio. Unlike most other things here, it wasn't made by me for me, but instead was for my then-girlfriend to demonstrate a system which she wanted to see implemented into her school.",
-        "review": "I never really finished this project. Looking back on it, there are a lot of infrastructure problems which ultimately came back to bite me and there are lots of bugs still hiding in there. Given my skill level at the time though, I'm happy with how it turned out.",
-        "languages": ["HTML", "CSS", "Materialize", "JavaScript", "NodeJS", "Express", "JQuery", "MongoDB"]
-    },
-    {
-        "title": "Computer Science HTML Project - December 2018",
-        "intro": "A website created in a series of Computer Science lessons as part of the A-Level specification.",
-        "status": "Deprecated",
-        "start": "December 2018",
-        "end": "December 2018",
-        "repo": "https://github.com/Naeviant/CS-18",
-        "showcase": "https://cs18.hirst.xyz",
-        "description": "This project was a task set in a Computer Science lesson. Without using any major coding libraries (including JQuery), my task was to make a nine-page website covering some of the Wonders of the World. It also needed to include a form with validation.",
-        "review": "Considering that this is one of the few projects on here which doesn't make use of major coding libraries, I would say that this project has gone well. I particularly like the navigation system which I created.",
-        "languages": ["HTML", "CSS", "JavaScript"]
     },
     {
         "title": "Koda",
@@ -93,16 +103,5 @@
         "description": "This was an entry to a Hackathon competition. Our task was to create something which used API data to improve daily life. So, we made use of Google's API libraries to create a calendar which can calculate how soon in advance you should set off and how to get there. It will also send SMS notifications 15 minutes before the user needs to set off. Unfortunately, this, and the system to add new events are disabled in the showcase.",
         "review": "Although this is not as polished as I would like due to time restrictions, I am happy with how this turned out. Assuming that the system is not abused, I have not come across any bugs with the system. It also won us the challenge so I think that says enough about it!",
         "languages": ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS", "Express", "JQuery"]
-    },
-    {
-        "title": "Redirects",
-        "intro": "A link redirects system developed for my own personal use.",
-        "status": "Maintained",
-        "start": "November 2018",
-        "end": "Present",
-        "repo": "https://github.com/Naeviant/Redirects",
-        "description": "One of the things that I wanted to have when I bought my domain was a link shortening service. I have made something similar in the past, so thought it wouldn't be too much work to make one of my own. I continue to use it on this domain and others.",
-        "review": "This was a nice and straight forward project. I don't know of any bugs with it. Unlike most projects, I used Bootstrap CSS, allowing me to get a better understanding of it.",
-        "languages": ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS", "Express", "JQuery", "MongoDB"]
     }
 ]
