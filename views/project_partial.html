@@ -1,5 +1,21 @@
-<h1 style="font-size: 2.5rem;">{{ title }} {% if status == "Live" %}<span class="badge badge-success">{{ status }}</span>{% elseif status == "Archived" %}<span class="badge badge-warning">{{ status }}</span>{% endif %}{% if showcase %}<a target="_blank" href="{{ showcase }}" data-toggle="tooltip" data-placement="bottom" title="View Project"><i class="fas fa-external-link-square-alt"></i></a>{% endif %}<a target="_blank" href="{{ repo }}" data-toggle="tooltip" data-placement="bottom" title="View Code"><i class="fab fa-github"></i></a></h1>
+<h1 style="font-size: 2.5rem;">
+	{{ title }}
+	{% if status == "Live" %}
+		<span class="badge badge-success">{{ status }}</span>
+	{% elseif status == "Archived" %}
+		<span class="badge badge-warning">{{ status }}</span>
+	{% endif %}
+	{% if showcase %}
+		<a target="_blank" href="{{ showcase }}" data-toggle="tooltip" data-placement="bottom" title="View Project"><i class="fas fa-external-link-square-alt"></i></a>
+	{% endif %}
+	{% if repo %}
+		<a target="_blank" href="{{ repo }}" data-toggle="tooltip" data-placement="bottom" title="View Code"><i class="fab fa-github"></i></a>
+	{% endif %}
+</h1>
 <h5>{{ intro }}</h5>
+{% for language in languages %}
+	<span class="badge badge-pill badge-dark">{{ language }}</span>
+{% endfor %}
 <br />
 <br />
 <p style="margin-bottom: 0;"><strong>Description</strong></p>

@@ -8,7 +8,8 @@
         "repo": "https://github.com/Naeviant/MyWebsite",
         "showcase": "https://hirst.xyz",
         "description": "The aim of this website was to create a landing page for my domain. I wanted to use it to give a brief introduction to myself and what I do, as well as showcasing my projects. Hopefully this will be a good reference point in future which I can show to people when introducing some of my past work.",
-        "review": "This project was relatively straight forward. The hardest part was getting a format which I liked. I wanted to try a system where there is no loading or page refreshing - only smooth transitions between pages. While this wasn't as easy, I'm happy with how it's turned out."
+        "review": "This project was relatively straight forward. The hardest part was getting a format which I liked. I wanted to try a system where there is no loading or page refreshing - only smooth transitions between pages. While this wasn't as easy, I'm happy with how it's turned out.",
+        "languages": ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS", "Express", "JQuery"]
     },
     {
         "title": "Cards",
@@ -19,7 +20,8 @@
         "repo": "https://github.com/Naeviant/Cards",
         "showcase": "https://cards.hirst.xyz",
         "description": "This was intended to be a quick project. I had never really made a game before and wanted to create something fun rather than serious. After making this and publishing it, I found it really addictive and played it quite a lot.",
-        "review": "This was not intended to be a challenging project and so I had very little difficulty in putting it together. I am not aware of any bugs in this project, so I am very happy with the result."
+        "review": "This was not intended to be a challenging project and so I had very little difficulty in putting it together. I am not aware of any bugs in this project, so I am very happy with the result.",
+        "languages": ["HTML", "CSS", "Materialize", "JavaScript", "NodeJS", "Express", "JQuery"]
     },
     {
         "title": "RotaIt",
@@ -29,7 +31,8 @@
         "end": "July 2019",
         "repo": "https://github.com/Naeviant/RotaIt-Management",
         "description": "As part of my Computer Science A-Level, I was required to undertake a coding project. I chose to create this rota tool. It is made up of a management system for managers to manage staff and create rotas, and also a client system for staff to view rotas and view their information.",
-        "review": "The project scored well, which I believe shows that it was a success. There are, however, lots of bugs related to some base parts of the code. I therefore feel that further development would require a full restart, and so this project is no longer maintained. I may revisit it at a later date."
+        "review": "The project scored well, which I believe shows that it was a success. There are, however, lots of bugs related to some base parts of the code. I therefore feel that further development would require a full restart, and so this project is no longer maintained. I may revisit it at a later date.",
+        "languages": ["HTML", "CSS", "Materialize", "JavaScript", "NodeJS", "Express", "JQuery", "MongoDB"]
     },
     {
         "title": "Tameside Hackathon - October 2018",
@@ -40,7 +43,8 @@
         "repo": "https://github.com/Naeviant/Hackathon-18",
         "showcase": "https://hack18.hirst.xyz",
         "description": "This was an entry to a Hackathon competition. Our task was to create a Brother product in the year 2068 and present it in a creative way. The purpose of this website was to fulfil the latter part of the brief. Even though it won us \"Best in Show\", it wasn't quite enough to give us a win for the task!",
-        "review": "Although this is unfinished due to time limitations, I'm happy with how it turned out. It was the first time I had properly used Bootstrap's CSS libraries, which caused the odd problem here and there. Sadly it just wasn't a winner on this occassion!"
+        "review": "Although this is unfinished due to time limitations, I'm happy with how it turned out. It was the first time I had properly used Bootstrap's CSS libraries, which caused the odd problem here and there. Sadly it just wasn't a winner on this occassion!",
+        "languages": ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS", "Express", "JQuery"]
     },
     {
         "title": "Insight Feedback",
@@ -51,7 +55,8 @@
         "repo": "https://github.com/Naeviant/Insight-Feedback",
         "showcase": "https://feedback.hirst.xyz",
         "description": "This project is the oldest one which appears within my portfolio. Unlike most other things here, it wasn't made by me for me, but instead was for my then-girlfriend to demonstrate a system which she wanted to see implemented into her school.",
-        "review": "I never really finished this project. Looking back on it, there are a lot of infrastructure problems which ultimately came back to bite me and there are lots of bugs still hiding in there. Given my skill level at the time though, I'm happy with how it turned out."
+        "review": "I never really finished this project. Looking back on it, there are a lot of infrastructure problems which ultimately came back to bite me and there are lots of bugs still hiding in there. Given my skill level at the time though, I'm happy with how it turned out.",
+        "languages": ["HTML", "CSS", "Materialize", "JavaScript", "NodeJS", "Express", "JQuery", "MongoDB"]
     },
     {
         "title": "Computer Science HTML Project - December 2018",
@@ -62,7 +67,8 @@
         "repo": "https://github.com/Naeviant/CS-18",
         "showcase": "https://cs18.hirst.xyz",
         "description": "This project was a task set in a Computer Science lesson. Without using any major coding libraries (including JQuery), my task was to make a nine-page website covering some of the Wonders of the World. It also needed to include a form with validation.",
-        "review": "Considering that this is one of the few projects on here which doesn't make use of major coding libraries, I would say that this project has gone well. I particularly like the navigation system which I created."
+        "review": "Considering that this is one of the few projects on here which doesn't make use of major coding libraries, I would say that this project has gone well. I particularly like the navigation system which I created.",
+        "languages": ["HTML", "CSS", "JavaScript"]
     },
     {
         "title": "Koda",
@@ -73,7 +79,8 @@
         "repo": "https://github.com/Naeviant/Koda",
         "showcase": "https://koda.hirst.xyz",
         "description": "This project was intended to be a bot for a specific college server. I wanted it to have some of the games which I have included in past bots I have created, as well as some additional functions such as reminders. It was also designed to have a strong access levels system.",
-        "review": "I think it could still do with some more features which people usually like on Discord servers. For example, music services are popular - as well as commands which make use of APIs to embed images and audio. So far though, I'd say this is a fun and useful system."
+        "review": "I think it could still do with some more features which people usually like on Discord servers. For example, music services are popular - as well as commands which make use of APIs to embed images and audio. So far though, I'd say this is a fun and useful system.",
+        "languages": ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS", "Express", "Discord.js"]
     },
     {
         "title": "Tameside Hackathon - February 2019",
@@ -84,7 +91,8 @@
         "repo": "https://github.com/Naeviant/Hackathon-19",
         "showcase": "https://hack19.hirst.xyz",
         "description": "This was an entry to a Hackathon competition. Our task was to create something which used API data to improve daily life. So, we made use of Google's API libraries to create a calendar which can calculate how soon in advance you should set off and how to get there. It will also send SMS notifications 15 minutes before the user needs to set off. Unfortunately, this, and the system to add new events are disabled in the showcase.",
-        "review": "Although this is not as polished as I would like due to time restrictions, I am happy with how this turned out. Assuming that the system is not abused, I have not come across any bugs with the system. It also won us the challenge so I think that says enough about it!"
+        "review": "Although this is not as polished as I would like due to time restrictions, I am happy with how this turned out. Assuming that the system is not abused, I have not come across any bugs with the system. It also won us the challenge so I think that says enough about it!",
+        "languages": ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS", "Express", "JQuery"]
     },
     {
         "title": "Redirects",
@@ -94,6 +102,7 @@
         "end": "Present",
         "repo": "https://github.com/Naeviant/Redirects",
         "description": "One of the things that I wanted to have when I bought my domain was a link shortening service. I have made something similar in the past, so thought it wouldn't be too much work to make one of my own. I continue to use it on this domain and others.",
-        "review": "This was a nice and straight forward project. I don't know of any bugs with it. Unlike most projects, I used Bootstrap CSS, allowing me to get a better understanding of it."
+        "review": "This was a nice and straight forward project. I don't know of any bugs with it. Unlike most projects, I used Bootstrap CSS, allowing me to get a better understanding of it.",
+        "languages": ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS", "Express", "JQuery", "MongoDB"]
     }
 ]
