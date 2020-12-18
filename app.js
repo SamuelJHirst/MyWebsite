@@ -32,14 +32,11 @@ app.get("*", function(req, res, next) {
 });
 
 app.post("/project/", function(req, res, next) {
-    for (var project of projects) {
-        if (project.title == req.body.project) {
-            var found = true;
-            res.render("project_partial", project);
-            break;
-        }
+    var project = projects.filter(x => x.title == req.body.project );
+    if (project[0]) {
+        res.render("project_partial", project[0]);
     }
-    if (!found) {
+    else {
         res.sendStatus(404);
     }
 });
