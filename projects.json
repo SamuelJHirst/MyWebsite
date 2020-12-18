@@ -2,7 +2,7 @@
     {
         "title": "hirst.xyz",
         "intro": "My own personal website for my online portfolio.",
-        "status": "Live",
+        "status": "Maintained",
         "start": "November 2018",
         "end": "Present",
         "repo": "https://github.com/Naeviant/MyWebsite",
@@ -14,7 +14,7 @@
     {
         "title": "Cards",
         "intro": "A \"Higher or Lower\" cards game, which provides statistics of the best choice to make.",
-        "status": "Live",
+        "status": "Maintained",
         "start": "August 2019",
         "end": "Present",
         "repo": "https://github.com/Naeviant/Cards",
@@ -26,7 +26,7 @@
     {
         "title": "RotaIt",
         "intro": "A rota creation tool designed to add features to the tool used at my workplace.",
-        "status": "Archived",
+        "status": "Deprecated",
         "start": "April 2019",
         "end": "July 2019",
         "repo": "https://github.com/Naeviant/RotaIt-Management",
@@ -37,7 +37,7 @@
     {
         "title": "Tameside Hackathon - October 2018",
         "intro": "A website to showcase products made by Brother UK in 2068.",
-        "status": "Archived",
+        "status": "Deprecated",
         "start": "October 2018",
         "end": "October 2018",
         "repo": "https://github.com/Naeviant/Hackathon-18",
@@ -49,7 +49,7 @@
     {
         "title": "Insight Feedback",
         "intro": "A proof of concept of a system for teachers to give students feedback.",
-        "status": "Archived",
+        "status": "Deprecated",
         "start": "March 2017",
         "end": "April 2017",
         "repo": "https://github.com/Naeviant/Insight-Feedback",
@@ -61,7 +61,7 @@
     {
         "title": "Computer Science HTML Project - December 2018",
         "intro": "A website created in a series of Computer Science lessons as part of the A-Level specification.",
-        "status": "Archived",
+        "status": "Deprecated",
         "start": "December 2018",
         "end": "December 2018",
         "repo": "https://github.com/Naeviant/CS-18",
@@ -73,7 +73,7 @@
     {
         "title": "Koda",
         "intro": "Koda is a personal Discord bot. It's not built to do anything particularly special - just to be a bit of fun.",
-        "status": "Live",
+        "status": "Maintained",
         "start": "Janurary 2019",
         "end": "Present",
         "repo": "https://github.com/Naeviant/Koda",
@@ -85,7 +85,7 @@
     {
         "title": "Tameside Hackathon - February 2019",
         "intro": "A calendar which can plan out how to get to a place and at what point you should set off.",
-        "status": "Archived",
+        "status": "Deprecated",
         "start": "February 2019",
         "end": "February 2019",
         "repo": "https://github.com/Naeviant/Hackathon-19",
@@ -97,7 +97,7 @@
     {
         "title": "Redirects",
         "intro": "A link redirects system developed for my own personal use.",
-        "status": "Live",
+        "status": "Maintained",
         "start": "November 2018",
         "end": "Present",
         "repo": "https://github.com/Naeviant/Redirects",
