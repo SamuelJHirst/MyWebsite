@@ -77,14 +77,17 @@ function Sidebar(props: SidebarProps) {
       case 'ABOUT ME':
         setPage(1);
         break;
-      case 'PROJECTS':
+      case 'SOFTWARE':
         setPage(2);
         break;
-      case 'BLOG':
+      case 'MUSIC':
         setPage(3);
+        break;
+      case 'BLOG':
+        setPage(4);
         break; 
       case 'CONTACT':
-        setPage(4);
+        setPage(5);
         break;            
     }
   };
@@ -101,7 +104,8 @@ function Sidebar(props: SidebarProps) {
       <ButtonGroup orientation="vertical" color="secondary" className={styles.buttons}>
         <Button onClick={onClick}>Home</Button>
         <Button onClick={onClick}>About Me</Button>
-        <Button onClick={onClick}>Projects</Button>
+        <Button onClick={onClick}>Software</Button>
+        <Button onClick={onClick}>Music</Button>
         <Button onClick={onClick}>Blog</Button>
         <Button onClick={onClick}>Contact</Button>
       </ButtonGroup>

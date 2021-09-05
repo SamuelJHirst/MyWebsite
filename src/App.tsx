@@ -32,7 +32,7 @@ function App() {
         </Grid>
         <Grid item xs={9} className={styles.main}>
           { page === 0 ? <Home /> : <></> }
-          { page === 3 ? <Blog /> : <></> }
+          { page === 4 ? <Blog /> : <></> }
         </Grid>
       </Grid>
     </div>
