@@ -1,17 +1,36 @@
-import React from 'react';
-import bg from './bg.png';
-import './App.css';
+import { CssBaseline, Grid, makeStyles } from '@material-ui/core';
+import { useState } from 'react';
+import Sidebar from './components/Sidebar';
+
+const useStyles = makeStyles({
+  wrapper: {
+    height: '100%',
+  },
+  sidebar: {
+    backgroundColor: '#212121',
+    height: '100%',
+  },
+  main: {
+    backgroundColor: '#81d4fa',
+    height: '100%',
+  },
+});
 
 function App() {
+  const [page, setPage] = useState(0);
+  const styles = useStyles();
+
   return (
     <div className="App">
-      <img id="bg-img" src={bg} alt="Background" />
-      <div id="bg-overlay"></div>
-      <div id="content">
-        <h1>Back Soon!</h1>
-        <h3>I'm in the process of improving my websites.</h3>
-        <p>Lots of my websites use technologies which are no outdated. Upgrading them will make them faster, more resource friendly and more visually appealing.</p>
-      </div>
+      <CssBaseline />
+      <Grid container className={styles.wrapper}>
+        <Grid item xs={3} className={styles.sidebar}>
+          <Sidebar setPage={setPage} />    
+        </Grid>
+        <Grid item xs={9} className={styles.main}>
+          
+        </Grid>
+      </Grid>
     </div>
   );
 }
