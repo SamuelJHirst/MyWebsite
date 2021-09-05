@@ -1,6 +1,8 @@
 import { Accordion, AccordionDetails, AccordionSummary, Box, ListItem, ListItemText, makeStyles } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import blog from './blog.json';
+import background from './background.jpg';
+import BackgroundOverlay from '../common/BackgroundOverlay';
 
 const useStyles = makeStyles({
     root: {
@@ -27,26 +29,28 @@ function Blog() {
   const styles = useStyles();
 
   return (
-    <Box p={2} className={styles.root}>
-        {
-            (blog as BlogPost[]).map((post: BlogPost) => (
-                <Accordion>
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        <ListItem>
-                            <ListItemText primary={post.title} secondary={post.date}></ListItemText>
-                        </ListItem>
-                    </AccordionSummary>
-                    {
-                        post.post.map((paragraph: string) => (
-                            <AccordionDetails>
-                                {paragraph}
-                            </AccordionDetails>
-                        ))
-                    }
-                </Accordion>
-            ))
-        }
-    </Box>
+    <BackgroundOverlay src={background} alt="Crook O'Lune Picnic Site">
+        <Box p={2} className={styles.root}>
+            {
+                (blog as BlogPost[]).map((post: BlogPost) => (
+                    <Accordion>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            <ListItem>
+                                <ListItemText primary={post.title} secondary={post.date}></ListItemText>
+                            </ListItem>
+                        </AccordionSummary>
+                        {
+                            post.post.map((paragraph: string) => (
+                                <AccordionDetails>
+                                    {paragraph}
+                                </AccordionDetails>
+                            ))
+                        }
+                    </Accordion>
+                ))
+            }
+        </Box>
+    </BackgroundOverlay>
   );
 }
 

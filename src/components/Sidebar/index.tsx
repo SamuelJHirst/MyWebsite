@@ -62,11 +62,12 @@ const useStyles = makeStyles({
 });
 
 interface SidebarProps {
+  page: number;
   setPage(index: number): void;
 }
 
 function Sidebar(props: SidebarProps) {
-  const { setPage } = props;
+  const { page, setPage } = props;
   const styles = useStyles();
 
   const onClick = (e: any) => {
@@ -102,12 +103,12 @@ function Sidebar(props: SidebarProps) {
       </div>
       <Divider />
       <ButtonGroup orientation="vertical" color="secondary" className={styles.buttons}>
-        <Button onClick={onClick}>Home</Button>
-        <Button onClick={onClick}>About Me</Button>
-        <Button onClick={onClick}>Software</Button>
-        <Button onClick={onClick}>Music</Button>
-        <Button onClick={onClick}>Blog</Button>
-        <Button onClick={onClick}>Contact</Button>
+        <Button variant={page === 0 ? 'contained' : 'outlined'} onClick={onClick}>Home</Button>
+        <Button variant={page === 1 ? 'contained' : 'outlined'} onClick={onClick}>About Me</Button>
+        <Button variant={page === 2 ? 'contained' : 'outlined'} onClick={onClick}>Software</Button>
+        <Button variant={page === 3 ? 'contained' : 'outlined'} onClick={onClick}>Music</Button>
+        <Button variant={page === 4 ? 'contained' : 'outlined'} onClick={onClick}>Blog</Button>
+        <Button variant={page === 5 ? 'contained' : 'outlined'} onClick={onClick}>Contact</Button>
       </ButtonGroup>
       <Divider />
       <div className={styles.icons}> 
