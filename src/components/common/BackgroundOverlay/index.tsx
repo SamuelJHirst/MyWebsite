@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     width: '75%',
     height: '100%',
     backgroundColor: '#000',
-    opacity: 0.6,
+    opacity: 0.8,
     position: 'absolute',
     right: 0,
     top: 0,

@@ -39,13 +39,15 @@ function Blog() {
                                 <ListItemText primary={post.title} secondary={post.date}></ListItemText>
                             </ListItem>
                         </AccordionSummary>
-                        {
-                            post.post.map((paragraph: string) => (
-                                <AccordionDetails>
-                                    {paragraph}
-                                </AccordionDetails>
-                            ))
-                        }
+                        <Box p={2} pt={0}>
+                            {
+                                post.post.map((paragraph: string) => (
+                                    <AccordionDetails>
+                                        {paragraph}
+                                    </AccordionDetails>
+                                ))
+                            }
+                        </Box>
                     </Accordion>
                 ))
             }
