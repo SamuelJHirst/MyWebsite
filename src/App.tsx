@@ -1,5 +1,6 @@
 import { CssBaseline, Grid, makeStyles } from '@material-ui/core';
 import { useState } from 'react';
+import Home from './components/Home';
 import Sidebar from './components/Sidebar';
 
 const useStyles = makeStyles({
@@ -28,7 +29,9 @@ function App() {
           <Sidebar setPage={setPage} />    
         </Grid>
         <Grid item xs={9} className={styles.main}>
-          
+          {
+            page === 0 ? <Home /> : <></>
+          }
         </Grid>
       </Grid>
     </div>
