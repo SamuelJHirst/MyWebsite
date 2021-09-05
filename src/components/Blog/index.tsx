@@ -17,6 +17,9 @@ const useStyles = makeStyles({
         textAlign: 'center',
         padding: 5
     },
+    paragraph: {
+        textAlign: 'left',
+    }
 });
 
 interface BlogPost {
@@ -42,7 +45,7 @@ function Blog() {
                         <Box p={2} pt={0}>
                             {
                                 post.post.map((paragraph: string) => (
-                                    <AccordionDetails>
+                                    <AccordionDetails className={styles.paragraph}>
                                         {paragraph}
                                     </AccordionDetails>
                                 ))
