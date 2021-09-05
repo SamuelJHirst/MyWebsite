@@ -1,18 +1,20 @@
 import { CssBaseline, Grid, makeStyles } from '@material-ui/core';
 import { useState } from 'react';
+import Blog from './components/Blog';
 import Home from './components/Home';
 import Sidebar from './components/Sidebar';
 
 const useStyles = makeStyles({
   wrapper: {
     height: '100%',
+    overflow: 'hidden',
   },
   sidebar: {
     backgroundColor: '#212121',
     height: '100%',
   },
   main: {
-    backgroundColor: '#81d4fa',
+    backgroundColor: '#607d8b',
     height: '100%',
   },
 });
@@ -29,9 +31,8 @@ function App() {
           <Sidebar setPage={setPage} />    
         </Grid>
         <Grid item xs={9} className={styles.main}>
-          {
-            page === 0 ? <Home /> : <></>
-          }
+          { page === 0 ? <Home /> : <></> }
+          { page === 3 ? <Blog /> : <></> }
         </Grid>
       </Grid>
     </div>

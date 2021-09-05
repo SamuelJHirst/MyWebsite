@@ -2,6 +2,9 @@ import { makeStyles } from '@material-ui/core';
 import background from './background.jpg';
 
 const useStyles = makeStyles({
+  root: {
+    overflow: 'hidden',
+  },
   background: {
     width: '100%',
     height: '100%',
@@ -50,7 +53,7 @@ function About() {
   const styles = useStyles();
 
   return (
-    <>
+    <div className={styles.root}>
         <img src={background} alt="Sam in Tanzania" className={styles.background} />
         <div className={styles.overlay}></div>
         <div className={styles.content}>
@@ -60,7 +63,7 @@ function About() {
           <p>I am a web developer who likes to make stuff! This is my portfolio where I upload my projects - finished, in progress or abandoned. You'll also find my blog here too.</p>
           <p>Want to know more? Click the About Me button on the sidebar!</p>
         </div>
-    </>
+    </div>
   );
 }
 
