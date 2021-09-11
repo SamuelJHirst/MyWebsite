@@ -41,8 +41,8 @@ function Blog() {
     <BackgroundOverlay src={background} alt="Crook O'Lune Picnic Site">
         <Box p={2} className={styles.root}>
             {
-                (blog as BlogPost[]).map((post: BlogPost) => (
-                    <Accordion className={styles.header}>
+                (blog as BlogPost[]).map((post: BlogPost, index: number) => (
+                    <Accordion key={index} className={styles.header}>
                         <AccordionSummary expandIcon={<ExpandMoreIcon className={styles.primary} />}>
                             <ListItem>
                                 <ListItemText primary={post.title} secondary={post.date} classes={{primary: styles.primary, secondary: styles.secondary}}></ListItemText>
@@ -50,8 +50,8 @@ function Blog() {
                         </AccordionSummary>
                         <Box p={2} pt={0}>
                             {
-                                post.post.map((paragraph: string) => (
-                                    <AccordionDetails className={styles.paragraph}>
+                                post.post.map((paragraph: string, index: number) => (
+                                    <AccordionDetails key={index} className={styles.paragraph}>
                                         {paragraph}
                                     </AccordionDetails>
                                 ))

@@ -27,8 +27,8 @@ function Hackathons() {
     <BackgroundOverlay src={background} alt="Scottish Parliament">
       <Grid container className={styles.root}>
         {
-          (hackathons as EventInfo[]).map((event: EventInfo) => (
-            <Event event={event} />
+          (hackathons as EventInfo[]).map((event: EventInfo, index: number) => (
+            <Event key={index} event={event} />
           ))
         }
       </Grid>
