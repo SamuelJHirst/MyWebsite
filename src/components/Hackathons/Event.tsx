@@ -16,6 +16,16 @@ const useStyles = makeStyles({
     },
     icon: {
         margin: 'auto',
+        color: 'rgba(255, 255, 255, 0.7)',
+    },
+    header: {
+        backgroundColor: '#121212',
+    },
+    primary: {
+        color: '#FFF',
+    },
+    secondary: {
+        color: 'rgba(255, 255, 255, 0.7)',
     },
 });
 
@@ -35,24 +45,24 @@ function Event(props: EventProps) {
 
   return (
     <Grid item xs={12} className={styles.root}>
-        <Card>
+        <Card className={styles.header}>
             <CardContent>
-                <ListItemText primary={title} secondary={event}></ListItemText>
+                <ListItemText primary={title} secondary={event} classes={{primary: styles.primary, secondary: styles.secondary}}></ListItemText>
                 <Grid container>
                     <Grid item xs={3} className={styles.cell}>
-                        <Typography variant="body2">{content[0]}</Typography>
+                        <Typography variant="body2" className={styles.secondary}>{content[0]}</Typography>
                     </Grid>
                     <Grid item xs={1} className={styles.cell}>
                         <ArrowRight className={styles.icon} />
                     </Grid>
                     <Grid item xs={4} className={styles.cell}>
-                        <Typography variant="body2">{content[1]}</Typography>
+                        <Typography variant="body2" className={styles.secondary}>{content[1]}</Typography>
                     </Grid>
                     <Grid item xs={1} className={styles.cell}>
                         <ArrowRight className={styles.icon} />
                     </Grid>
                     <Grid item xs={3} className={styles.cell}>
-                        <Typography variant="body2">{content[2]}</Typography>
+                        <Typography variant="body2" className={styles.secondary}>{content[2]}</Typography>
                     </Grid>
                 </Grid>
             </CardContent>

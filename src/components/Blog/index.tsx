@@ -14,11 +14,17 @@ const useStyles = makeStyles({
         borderBottomRightRadius: 0,
     },
     header: {
-        textAlign: 'center',
-        padding: 5
+        backgroundColor: '#121212',
+    },
+    primary: {
+        color: '#FFF',
+    },
+    secondary: {
+        color: 'rgba(255, 255, 255, 0.7)',
     },
     paragraph: {
         textAlign: 'left',
+        color: 'rgba(255, 255, 255, 0.7)',
     }
 });
 
@@ -36,10 +42,10 @@ function Blog() {
         <Box p={2} className={styles.root}>
             {
                 (blog as BlogPost[]).map((post: BlogPost) => (
-                    <Accordion>
-                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <Accordion className={styles.header}>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon className={styles.primary} />}>
                             <ListItem>
-                                <ListItemText primary={post.title} secondary={post.date}></ListItemText>
+                                <ListItemText primary={post.title} secondary={post.date} classes={{primary: styles.primary, secondary: styles.secondary}}></ListItemText>
                             </ListItem>
                         </AccordionSummary>
                         <Box p={2} pt={0}>
