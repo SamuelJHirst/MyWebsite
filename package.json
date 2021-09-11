@@ -28,7 +28,10 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "no-useless-computed-key": 0
+    }
   },
   "browserslist": {
     "production": [
