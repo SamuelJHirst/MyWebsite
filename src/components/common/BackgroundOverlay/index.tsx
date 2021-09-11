@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     overflow: 'hidden',
+    height: '100%',
   },
   background: {
     width: '100%',
