@@ -3,6 +3,7 @@ import { useState } from 'react';
 import About from './components/About';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import Hackathons from './components/Hackathons';
 import Home from './components/Home';
 import Music from './components/Music';
 import Sidebar from './components/Sidebar';
@@ -39,8 +40,9 @@ function App() {
           { page === 1 ? <About /> : <></> }
           { page === 2 ? <Software /> : <></> }
           { page === 3 ? <Music /> : <></> }
-          { page === 4 ? <Blog /> : <></> }
-          { page === 5 ? <Contact /> : <></> }
+          { page === 4 ? <Hackathons /> : <></> }
+          { page === 5 ? <Blog /> : <></> }
+          { page === 6 ? <Contact /> : <></> }
         </Grid>
       </Grid>
     </div>

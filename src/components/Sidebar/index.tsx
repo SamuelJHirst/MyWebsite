@@ -18,8 +18,8 @@ const useStyles = makeStyles({
     },
   },
   image: {
-    width: '28vh',
-    height: '28vh',
+    width: '20vh',
+    height: '20vh',
   },
   email: {
     '& > *': { 
@@ -84,11 +84,14 @@ function Sidebar(props: SidebarProps) {
       case 'MUSIC':
         setPage(3);
         break;
-      case 'BLOG':
+      case 'HACKATHONS':
         setPage(4);
         break; 
-      case 'CONTACT':
+      case 'BLOG':
         setPage(5);
+        break; 
+      case 'CONTACT':
+        setPage(6);
         break;            
     }
   };
@@ -107,8 +110,9 @@ function Sidebar(props: SidebarProps) {
         <Button variant={page === 1 ? 'contained' : 'outlined'} onClick={onClick}>About Me</Button>
         <Button variant={page === 2 ? 'contained' : 'outlined'} onClick={onClick}>Software</Button>
         <Button variant={page === 3 ? 'contained' : 'outlined'} onClick={onClick}>Music</Button>
-        <Button variant={page === 4 ? 'contained' : 'outlined'} onClick={onClick}>Blog</Button>
-        <Button variant={page === 5 ? 'contained' : 'outlined'} onClick={onClick}>Contact</Button>
+        <Button variant={page === 4 ? 'contained' : 'outlined'} onClick={onClick}>Hackathons</Button>
+        <Button variant={page === 5 ? 'contained' : 'outlined'} onClick={onClick}>Blog</Button>
+        <Button variant={page === 6 ? 'contained' : 'outlined'} onClick={onClick}>Contact</Button>
       </ButtonGroup>
       <Divider />
       <div className={styles.icons}> 
