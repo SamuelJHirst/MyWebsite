@@ -12,7 +12,10 @@ const useStyles = makeStyles({
     objectFit: 'cover',
   },
   overlay: {
-    width: '75%',
+    width: '100%',
+    ['@media (min-width:960px)']: {
+      width: '75%',
+    },
     height: '100%',
     backgroundColor: '#000',
     opacity: 0.8,
@@ -21,7 +24,10 @@ const useStyles = makeStyles({
     top: 0,
   },
   content: {
-    width: '75%',
+    width: '100%',
+    ['@media (min-width:960px)']: {
+      width: '75%',
+    },
     height: '100%',
     position: 'absolute',
     right: 0,

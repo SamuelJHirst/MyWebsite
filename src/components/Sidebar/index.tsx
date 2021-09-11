@@ -41,18 +41,12 @@ const useStyles = makeStyles({
     width: '50%',
   },
   icons: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
+    textAlign: 'center',
   },
   icon: {
-    fontSize: '250%',
+    fontSize: '200%',
   },
   iconButton: {
-    marginTop: 20,
-    marginLeft: 12,
-    marginRight: 12,
     color: '#FFF',
     transition: 'ease all 200ms',
     '&:hover': {
@@ -64,10 +58,11 @@ const useStyles = makeStyles({
 interface SidebarProps {
   page: number;
   setPage(index: number): void;
+  showNavigation(showing: boolean): void;
 }
 
 function Sidebar(props: SidebarProps) {
-  const { page, setPage } = props;
+  const { page, setPage, showNavigation } = props;
   const styles = useStyles();
 
   const onClick = (e: any) => {
@@ -94,6 +89,7 @@ function Sidebar(props: SidebarProps) {
         setPage(6);
         break;            
     }
+    showNavigation(false);
   };
 
   return (
