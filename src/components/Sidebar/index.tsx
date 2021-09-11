@@ -112,13 +112,13 @@ function Sidebar(props: SidebarProps) {
       </ButtonGroup>
       <Divider />
       <div className={styles.icons}> 
-        <IconButton href="https://github.com/Naeviant" className={styles.iconButton}>
+        <IconButton href="https://github.com/Naeviant" className={styles.iconButton} target="_blank" rel="noreferrer">
           <GitHubIcon className={styles.icon} />
         </IconButton>
-        <IconButton href="https://twitter.com/Naeviant" className={styles.iconButton}>
+        <IconButton href="https://twitter.com/Naeviant" className={styles.iconButton} target="_blank" rel="noreferrer">
           <TwitterIcon className={styles.icon} />
         </IconButton>
-        <IconButton href="https://linkedin.com/in/naeviant/" className={styles.iconButton}>
+        <IconButton href="https://linkedin.com/in/naeviant/" className={styles.iconButton} target="_blank" rel="noreferrer">
           <LinkedInIcon className={styles.icon} />
         </IconButton>
       </div>
