@@ -15,7 +15,7 @@ const useStyles = makeStyles({
       marginBottom: 0,
     },
     '& > *': {
-      maxWidth: '50%',
+      maxWidth: '75%',
       marginLeft: 'auto',
       marginRight: 'auto',
     },

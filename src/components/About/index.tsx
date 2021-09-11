@@ -4,13 +4,15 @@ import background from './background.jpg';
 
 const useStyles = makeStyles({
   root: {
+    overflow: 'auto',
+    padding: 16,
     '& > h2': {
       fontSize: '2rem',
       marginTop: 0,
       marginBottom: 0,
     },
     '& > *': {
-      maxWidth: '50%',
+      maxWidth: '75%',
       marginLeft: 'auto',
       marginRight: 'auto',
     },
