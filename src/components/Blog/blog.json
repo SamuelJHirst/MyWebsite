@@ -11,5 +11,19 @@
             "I’ve decided not to publish any of my software for now, because I think it needs improvement. Those improvements will be made over the coming weeks and months before being reuploaded. I want to upload things which will be useful and that I can maintain. This website will also need further work too – mainly for the background images. It turns out that finding high quality, high resolution, royalty-free images is quite challenging. So, for now, I hope you don’t mind the photos from my holidays and day trips.",
             "I might upload more of these in future, or this might be the only one before the blog quietly disappears from the site. I guess time will tell!"
         ]
+    },
+    {
+        "title": "5 Months Later...",
+        "date": "Friday 4th February 2022",
+        "post": [
+            "When I wrote my first blog post on this website, I concluded by saying that I may write more posts in the future, or may allow this section to quietly disappear from the site. It's been nearly five months since I wrote that, and it seems about time I posted something new. So, here are some updates!",
+            "I'm continuing to upgrade some of my previous projects. Much like I did for this website, I have upgraded my \"Higher or Lower\" cards game and Tanzania blog from ExpressJS with Swig to ReactJS. I've also changed my link shortening service to use Handlebars, but kept the ExpressJS framework. These projects now also use TypeScript for additional improvements. Links to all of these projects are available in the \"Software\" section of this website.",
+            "That leads me nicely into my next section. I now have some decent code to show off on this website! As I publish this post, I'll also be removing the placeholder \"Software\" page and replacing it with some information and links to my work. I will be aiming to keep the content of this page quite diverse. Previously it contained a lot of JavaScript web applications, but this time I've got some exciting projects to talk about - such as a Snakes & Ladders game engine written in Java, a course unit review system written in PHP and a Pokemon-style game written in Python.",
+            "I would like to keep exploring new languages in order to produce varied content for this website. Hopefully, there will be some Ruby on Rails, Go, C/C++ and Swift coming soon.",
+            "Outside of my pet projects, there has also been some exciting professional news. I gave a talk at the inaugral i [] f event held by Imago Software and the Innovation Factory, where I discussed my time working on the Cohere project at Imago (more information is available on their website). I've since been re-hired by Imago to work on an exciting new project, which I hope to share more updates on soon.",
+            "And that's not all! I'm also now teaching part-time on a Python course which supports young people in Greater Manchester who come from disadvantaged and under-represented backgrounds. It's been an exciting but challenging venture so far.",
+            "Looking later into the year, I will also be working on an app for the NHS. Again, I hope to share more updates on this soon.",
+            "Hopefully, it won't take me another five months to write the next update. But I'm not making any promises!"
+        ]
     }
 ]
