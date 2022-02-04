@@ -1,5 +1,15 @@
 [
     {
+        "title": "Pokemon Sanctuary",
+        "event": "GreatUniHack 2021",
+        "content": [
+            "Our task was to create something which followed a \"nuclear fallout\" theme.",
+            "We created a game using the Pygame module in Python. The idea of the game was that you would catch Pokemon in this dangerous, post-apocalyptic world which is littered with hazards that can harm the player. The code was fully commented and met PEP8 styling guidelines.",
+            "My team received a special mention for the quality of the finished application - which was effectively a top five prize out of 26 entries."
+        ],
+        "github": "https://github.com/Hive-Worker-Bees/PokemonSanctuary"
+    },
+    {
         "title": "Journey Planner",
         "event": "Tameside Hack: Summer 2019",
         "content": [
