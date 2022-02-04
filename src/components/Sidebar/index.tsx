@@ -2,7 +2,7 @@ import { Avatar, Button, Typography, makeStyles, ButtonGroup, Divider, IconButto
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import TwitterIcon from '@material-ui/icons/Twitter';
+// import TwitterIcon from '@material-ui/icons/Twitter';
 import picture from './picture.png';
 
 const useStyles = makeStyles({
@@ -115,9 +115,9 @@ function Sidebar(props: SidebarProps) {
         <IconButton href="https://github.com/Naeviant" className={styles.iconButton} target="_blank" rel="noreferrer">
           <GitHubIcon className={styles.icon} />
         </IconButton>
-        <IconButton href="https://twitter.com/Naeviant" className={styles.iconButton} target="_blank" rel="noreferrer">
+        {/* <IconButton href="https://twitter.com/Naeviant" className={styles.iconButton} target="_blank" rel="noreferrer">
           <TwitterIcon className={styles.icon} />
-        </IconButton>
+        </IconButton> */}
         <IconButton href="https://linkedin.com/in/naeviant/" className={styles.iconButton} target="_blank" rel="noreferrer">
           <LinkedInIcon className={styles.icon} />
         </IconButton>
