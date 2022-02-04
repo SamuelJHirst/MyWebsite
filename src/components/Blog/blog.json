@@ -1,18 +1,5 @@
 [
     {
-        "title": "\"Things Change Quickly\"",
-        "date": "Sunday 5th September 2021",
-        "post": [
-            "When I first started to pursue a career in Computer Science, I was given a clear warning: things change quickly and its important to keep your skills up to date. It’s a statement I agree with and something I’ve always tried to keep in mind. I was reminded of this when I was recently doing some routine work on my web server and noticed that one of the key packages for my website’s landing page is no longer maintained. This package (Swig) was also causing security vulnerabilities in the website.",
-            "I had a think about what to do about this. Swig is quite a key module in the website’s inner workings (it is responsible for generating the HTML which is rendered in the browser) and so it wouldn’t be particularly easy to change. But then I thought back to some job adverts I looked through, and not one was asking for a website with server-side rendering written in NodeJS. It’s now all TypeScript, React and the like. So, I decided to modernise my website.",
-            "And here it is! Now it is written in React and Typescript. It comes with a persistent sidebar which contains all the key information about me, while also including the navigation. Despite these changes, the core focus of the website remains the same: to show off my past work. But, this time I’ve tried to expand into other areas such as music and this blog.",
-            "Music mashups are something I’ve always wanted to try but have never been good at.  I think that half the battle is trying to come up with the idea, rather than actually executing (I think the same for software to be honest). Hopefully, publishing them on here will give me a goal to work towards and will motivate me to work on it more.",
-            "The blog is also new to the site. I’ve never attempted a blog before, for the same reason I don’t really post to social media: I’m not convinced people are that interested in what I’m up to. But who knows? Maybe they are. I’ve not worked too hard on the “behind the scenes” of this blog. It’s currently just a JSON file being nicely rendered by React. Perhaps, if I use it frequently enough, I’ll make it better and look into comments and the like!",
-            "I’ve decided not to publish any of my software for now, because I think it needs improvement. Those improvements will be made over the coming weeks and months before being reuploaded. I want to upload things which will be useful and that I can maintain. This website will also need further work too – mainly for the background images. It turns out that finding high quality, high resolution, royalty-free images is quite challenging. So, for now, I hope you don’t mind the photos from my holidays and day trips.",
-            "I might upload more of these in future, or this might be the only one before the blog quietly disappears from the site. I guess time will tell!"
-        ]
-    },
-    {
         "title": "5 Months Later...",
         "date": "Friday 4th February 2022",
         "post": [
@@ -24,6 +11,19 @@
             "And that's not all! I'm also now teaching part-time on a Python course which supports young people in Greater Manchester who come from disadvantaged and under-represented backgrounds. It's been an exciting but challenging venture so far.",
             "Looking later into the year, I will also be working on an app for the NHS. Again, I hope to share more updates on this soon.",
             "Hopefully, it won't take me another five months to write the next update. But I'm not making any promises!"
+        ]
+    },
+    {
+        "title": "\"Things Change Quickly\"",
+        "date": "Sunday 5th September 2021",
+        "post": [
+            "When I first started to pursue a career in Computer Science, I was given a clear warning: things change quickly and its important to keep your skills up to date. It’s a statement I agree with and something I’ve always tried to keep in mind. I was reminded of this when I was recently doing some routine work on my web server and noticed that one of the key packages for my website’s landing page is no longer maintained. This package (Swig) was also causing security vulnerabilities in the website.",
+            "I had a think about what to do about this. Swig is quite a key module in the website’s inner workings (it is responsible for generating the HTML which is rendered in the browser) and so it wouldn’t be particularly easy to change. But then I thought back to some job adverts I looked through, and not one was asking for a website with server-side rendering written in NodeJS. It’s now all TypeScript, React and the like. So, I decided to modernise my website.",
+            "And here it is! Now it is written in React and Typescript. It comes with a persistent sidebar which contains all the key information about me, while also including the navigation. Despite these changes, the core focus of the website remains the same: to show off my past work. But, this time I’ve tried to expand into other areas such as music and this blog.",
+            "Music mashups are something I’ve always wanted to try but have never been good at.  I think that half the battle is trying to come up with the idea, rather than actually executing (I think the same for software to be honest). Hopefully, publishing them on here will give me a goal to work towards and will motivate me to work on it more.",
+            "The blog is also new to the site. I’ve never attempted a blog before, for the same reason I don’t really post to social media: I’m not convinced people are that interested in what I’m up to. But who knows? Maybe they are. I’ve not worked too hard on the “behind the scenes” of this blog. It’s currently just a JSON file being nicely rendered by React. Perhaps, if I use it frequently enough, I’ll make it better and look into comments and the like!",
+            "I’ve decided not to publish any of my software for now, because I think it needs improvement. Those improvements will be made over the coming weeks and months before being reuploaded. I want to upload things which will be useful and that I can maintain. This website will also need further work too – mainly for the background images. It turns out that finding high quality, high resolution, royalty-free images is quite challenging. So, for now, I hope you don’t mind the photos from my holidays and day trips.",
+            "I might upload more of these in future, or this might be the only one before the blog quietly disappears from the site. I guess time will tell!"
         ]
     }
 ]

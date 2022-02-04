@@ -41,7 +41,7 @@ function Blog() {
     <BackgroundOverlay src={background} alt="Crook O'Lune Picnic Site">
         <Box p={2} className={styles.root}>
             {
-                [...(blog as BlogPost[])].reverse().map((post: BlogPost, index: number) => (
+                (blog as BlogPost[]).map((post: BlogPost, index: number) => (
                     <Accordion key={index} className={styles.header}>
                         <AccordionSummary expandIcon={<ExpandMoreIcon className={styles.primary} />}>
                             <ListItem>
