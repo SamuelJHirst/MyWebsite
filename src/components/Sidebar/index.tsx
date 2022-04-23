@@ -107,7 +107,7 @@ function Sidebar(props: SidebarProps) {
         <Button variant={page === 2 ? 'contained' : 'outlined'} onClick={onClick}>Software</Button>
         <Button variant={page === 3 ? 'contained' : 'outlined'} onClick={onClick}>Music</Button>
         <Button variant={page === 4 ? 'contained' : 'outlined'} onClick={onClick}>Hackathons</Button>
-        <Button variant={page === 5 ? 'contained' : 'outlined'} onClick={onClick}>Blog</Button>
+        {/* <Button variant={page === 5 ? 'contained' : 'outlined'} onClick={onClick}>Blog</Button> */}
         <Button variant={page === 6 ? 'contained' : 'outlined'} onClick={onClick}>Contact</Button>
       </ButtonGroup>
       <Divider />
