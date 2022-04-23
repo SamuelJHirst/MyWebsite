@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Bottle Puzzle",
+        "description": "An engine for a puzzle game in which players have to get the same coloured liquid into the same bottle.",
+        "image": "coming-soon.png",
+        "status": "In Development",
+        "language": "C#",
+        "dates": "March 2022 - ",
+        "github": "https://github.com/Naeviant/BottlePuzzle/",
+        "demo": null
+    },
+    {
+        "name": "Traffic Overview",
+        "description": "An unofficial rewrite of National Highways' Traffic England service - including additional functionality.",
+        "image": "traffic-overview.png",
+        "status": "Maintained",
+        "language": "TypeScript (Express & React)",
+        "dates": "January 2022 - ",
+        "github": "https://github.com/Naeviant/traffic-overview/",
+        "demo": "https://traffic.hirst.me"
+    },
+    {
+        "name": "Snakes & Ladders",
+        "description": "A game engine for the well-known board game Snakes & Ladders.",
+        "image": "coming-soon.png",
+        "status": "Maintained",
+        "language": "Java",
+        "dates": "January 2022 - ",
+        "github": "https://github.com/Naeviant/SnakesAndLadders/",
+        "demo": null
+    },
+    {
+        "name": "Battle Game",
+        "description": "My solution for the final project of the Digital People course: a Pokemon-style fighting game.",
+        "image": "coming-soon.png",
+        "status": "Deprecated",
+        "language": "Python",
+        "dates": "December 2021 - January 2022",
+        "github": "https://github.com/Naeviant/SnakesAndLadders/",
+        "demo": null
+    },
+    {
+        "name": "Course Unit Reviews",
+        "description": "A platform for Computer Science students at the University of Manchester to review course units.",
+        "image": "cur.png",
+        "status": "Maintained",
+        "language": "PHP",
+        "dates": "November 2021 - ",
+        "github": "https://github.com/Naeviant/Course-Unit-Reviews",
+        "demo": null
+    },
+    {
+        "name": "Pressure",
+        "description": "A game which requires players to touch pressure plates in a maze at regular intervals.",
+        "image": "coming-soon.png",
+        "status": "Deprecated",
+        "language": "Python",
+        "dates": "December 2020",
+        "github": "https://github.com/Naeviant/Pressure",
+        "demo": null
+    },
+    {
+        "name": "Higher or Lower?",
+        "description": "A higher and lower cards game which gives you all the statistics you need to make an informed decision.",
+        "image": "cards.png",
+        "status": "Maintained",
+        "language": "TypeScript (React)",
+        "dates": "August 2019 - ",
+        "github": "https://github.com/Naeviant/Cards/",
+        "demo": "https://cards.hirst.me"
+    },
+    {
+        "name": "Tanzania Blog",
+        "description": "A showcase of my build up to and my time in Tanzania - including photos.",
+        "image": "tanzania.png",
+        "status": "Maintained",
+        "language": "TypeScript (React)",
+        "dates": "December 2018 - ",
+        "github": "https://github.com/Naeviant/Tanzania-Portfolio/",
+        "demo": "https://tanzania.hirst.me"
+    },
+    {
+        "name": "Redirects",
+        "description": "A link redirects system developed for my own personal use.",
+        "image": "redirects.png",
+        "status": "Maintained",
+        "language": "TypeScript (Express & Handlebars)",
+        "dates": "November 2018 - ",
+        "github": "https://github.com/Naeviant/Redirects/",
+        "demo": null
+    }
+]
