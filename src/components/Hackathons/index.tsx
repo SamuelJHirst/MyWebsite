@@ -1,37 +1,35 @@
-import { makeStyles, Grid } from '@material-ui/core';
+import { Box, Grid } from '@material-ui/core';
 import BackgroundOverlay from '../common/BackgroundOverlay';
 import background from './background.jpg';
 import Event from './Event';
-import hackathons from './hackathons.json';
-
-const useStyles = makeStyles({
-  root: {
-    padding: 16,
-    overflow: 'auto',
-    height: '100%',
-  },
-});
-
-interface EventInfo {
-  title: string;
-  event: string;
-  content: [string, string, string];
-  github?: string;
-  website?: string;
-}
+import events from './events.json';
 
 function Hackathons() {
-  const styles = useStyles();
-
   return (
-    <BackgroundOverlay src={background} alt="Scottish Parliament">
-      <Grid container className={styles.root}>
-        {
-          (hackathons as EventInfo[]).map((event: EventInfo, index: number) => (
-            <Event key={index} event={event} />
-          ))
-        }
-      </Grid>
+    <BackgroundOverlay src={background} alt="Sam at a Hackathon in 2018">
+      <Box 
+        p={2} 
+        style={{
+          overflow: 'auto',
+          height: '100%',
+        }}
+      >
+        <Grid container spacing={2}>
+          {
+            events.map((event) => (
+              <Event
+                key={event.name}
+                name={event.name}
+                description={event.description}
+                image={event.image}
+                collaborators={event.collaborators}
+                outcome={event.outcome}
+                github={event.github}
+              />
+            ))
+          }
+        </Grid>
+      </Box>
     </BackgroundOverlay>
   );
 }

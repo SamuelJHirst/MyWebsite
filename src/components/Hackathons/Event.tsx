@@ -1,86 +1,89 @@
-import { makeStyles, Button, Card, CardActions, CardContent, Grid, ListItemText, Typography } from '@material-ui/core';
-import { ArrowRight } from '@material-ui/icons';
-
-const useStyles = makeStyles({
-    root: {
-        padding: 8,
-    },
-    buttons: {
-        justifyContent: 'center',
-    },
-    cell: {
-        display: 'flex',
-        alignContent: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column',
-    },
-    icon: {
-        margin: 'auto',
-        color: 'rgba(255, 255, 255, 0.7)',
-    },
-    header: {
-        backgroundColor: '#121212',
-    },
-    primary: {
-        color: '#FFF',
-    },
-    secondary: {
-        color: 'rgba(255, 255, 255, 0.7)',
-    },
-});
+import React from 'react';
+import { 
+    Card,
+    CardContent,
+    CardHeader,
+    CardMedia,
+    Grid,
+    Table,
+    TableCell,
+    TableRow
+} from '@material-ui/core';
 
 interface EventProps {
-    event: {
-        title: string;
-        event: string;
-        content: [string, string, string];
-        github?: string;
-        website?: string;
-    }
+  name: string;
+  description: string;
+  image: string | null;
+  collaborators: string;
+  outcome: string;
+  github: string | null;
 }
 
 function Event(props: EventProps) {
-  const { title, event, content, github, website } = props.event;
-  const styles = useStyles();
+    const {
+        name,
+        description,
+        image,
+        collaborators,
+        outcome,
+        github
+    } = props;
 
-  return (
-    <Grid item xs={12} className={styles.root}>
-        <Card className={styles.header}>
-            <CardContent>
-                <ListItemText primary={title} secondary={event} classes={{primary: styles.primary, secondary: styles.secondary}}></ListItemText>
-                <Grid container>
-                    <Grid item xs={3} className={styles.cell}>
-                        <Typography variant="body2" className={styles.secondary}>{content[0]}</Typography>
-                    </Grid>
-                    <Grid item xs={1} className={styles.cell}>
-                        <ArrowRight className={styles.icon} />
-                    </Grid>
-                    <Grid item xs={4} className={styles.cell}>
-                        <Typography variant="body2" className={styles.secondary}>{content[1]}</Typography>
-                    </Grid>
-                    <Grid item xs={1} className={styles.cell}>
-                        <ArrowRight className={styles.icon} />
-                    </Grid>
-                    <Grid item xs={3} className={styles.cell}>
-                        <Typography variant="body2" className={styles.secondary}>{content[2]}</Typography>
-                    </Grid>
-                </Grid>
-            </CardContent>
-            <CardActions className={styles.buttons}>
-                {
-                    github
-                    ? <Button size="small" color="secondary" href={github} target="_blank" rel="noreferrer">GitHub</Button>
-                    : <></>
-                }
-                {
-                    website
-                    ? <Button size="small" color="secondary" href={website} target="_blank" rel="noreferrer">Demo</Button>
-                    : <></>
-                }
-            </CardActions>
-        </Card>
-    </Grid>
-  );
+    return (
+        <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
+            <Card style={{
+                justifyContent: 'center',
+                backgroundColor: '#121212',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
+            }}>
+                <CardHeader
+                    title={name}
+                    subheader={description}
+                    titleTypographyProps={{
+                        style: {
+                            color: '#EEEEEE'
+                        }
+                    }}
+                    subheaderTypographyProps={{
+                        style: {
+                            color: '#AAAAAA'
+                        }
+                    }}
+                />
+                <CardMedia 
+                    component="img"
+                    image={`/${image}`}
+                    alt={name}
+                    style={{ color: '#AAAAAA' }}
+                />
+                <CardContent>
+                    <Table>
+                        <TableRow>
+                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}><strong>Collaborators</strong></TableCell>
+                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}>{collaborators}</TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}><strong>Outcome</strong></TableCell>
+                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}>{outcome}</TableCell>
+                        </TableRow>
+                        {
+                            github
+                                ?
+                                    <TableRow>
+                                        <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}><strong>Code</strong></TableCell>
+                                        <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}>
+                                            <a href={github} rel="noopener noreferrer" style={{ color: '#EEEEEE' }} target="_blank">GitHub</a>
+                                        </TableCell>
+                                    </TableRow>
+                                :   null
+                        }
+                    </Table>
+                </CardContent>
+            </Card>
+        </Grid> 
+    )
 }
 
 export default Event;

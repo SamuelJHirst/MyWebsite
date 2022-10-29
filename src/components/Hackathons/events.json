@@ -1,0 +1,26 @@
+[
+    {
+        "name": "GreatUniHack 2022",
+        "description": "TBC",
+        "image": "coming-soon.png",
+        "collaborators": "Liam Patterson, Max Burnell & Nathan Taylor",
+        "outcome": "TBC",
+        "github": null
+    },
+    {
+        "name": "HackZurich 2022",
+        "description": "We created Alturit: an app to help people volunteer translations and captions in their downtime.",
+        "image": "hackzurich-22.png",
+        "collaborators": "Didem İştar, Ishwor Giri & Zoya Anwar",
+        "outcome": "Category Winner",
+        "github": null
+    },
+    {
+        "name": "GreatUniHack 2021",
+        "description": "We created Pokemon Sanctuary: a game in which you catch Pokemon in a dangerous, post-apocalyptic world.",
+        "image": "coming-soon.png",
+        "collaborators": "Dan Bryan-Smith, Georgia Cawley, Issie Shaw & Lucy Jefford",
+        "outcome": "Awarded Special Mention (Top 5 of 26)",
+        "github": "https://github.com/Hive-Worker-Bees/PokemonSanctuary"
+    }
+]
