@@ -1,15 +1,5 @@
 [
     {
-        "name": "Bottle Puzzle",
-        "description": "An engine for a puzzle game in which players have to get the same coloured liquid into the same bottle.",
-        "image": "coming-soon.png",
-        "status": "In Development",
-        "language": "C#",
-        "dates": "March 2022 - ",
-        "github": "https://github.com/Naeviant/BottlePuzzle/",
-        "demo": null
-    },
-    {
         "name": "Traffic Overview",
         "description": "An unofficial rewrite of National Highways' Traffic England service - including additional functionality.",
         "image": "traffic-overview.png",
@@ -18,16 +8,6 @@
         "dates": "January 2022 - ",
         "github": "https://github.com/Naeviant/traffic-overview/",
         "demo": "https://traffic.hirst.me"
-    },
-    {
-        "name": "Snakes & Ladders",
-        "description": "A game engine for the well-known board game Snakes & Ladders.",
-        "image": "coming-soon.png",
-        "status": "Maintained",
-        "language": "Java",
-        "dates": "January 2022 - ",
-        "github": "https://github.com/Naeviant/SnakesAndLadders/",
-        "demo": null
     },
     {
         "name": "Battle Game",
@@ -43,9 +23,9 @@
         "name": "Course Unit Reviews",
         "description": "A platform for Computer Science students at the University of Manchester to review course units.",
         "image": "cur.png",
-        "status": "Maintained",
+        "status": "Deprecated",
         "language": "PHP",
-        "dates": "November 2021 - ",
+        "dates": "November 2021 - September 2022",
         "github": "https://github.com/Naeviant/Course-Unit-Reviews",
         "demo": null
     },
