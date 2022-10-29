@@ -1,12 +1,12 @@
 import { Box, Grid } from '@material-ui/core';
 import BackgroundOverlay from '../common/BackgroundOverlay';
-import background from './background.jpg';
+import background from './background.png';
 import Event from './Event';
 import events from './events.json';
 
 function Hackathons() {
   return (
-    <BackgroundOverlay src={background} alt="Sam at a Hackathon in 2018">
+    <BackgroundOverlay src={background} alt="Lots of people coding at HackZurich 2022">
       <Box 
         p={2} 
         style={{
