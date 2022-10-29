@@ -3,6 +3,7 @@ import { Menu, MenuOpen } from '@material-ui/icons';
 import { useState } from 'react';
 import About from './components/About';
 import Blog from './components/Blog';
+import Company from './components/Company';
 import Contact from './components/Contact';
 import Hackathons from './components/Hackathons';
 import Home from './components/Home';
@@ -63,7 +64,8 @@ function App() {
             { page === 3 ? <Music /> : <></> }
             { page === 4 ? <Hackathons /> : <></> }
             { page === 5 ? <Blog /> : <></> }
-            { page === 6 ? <Contact /> : <></> }
+            { page === 6 ? <Company /> : <></> }
+            { page === 7 ? <Contact /> : <></> }
           </Grid>
         }
         <Hidden mdUp>
