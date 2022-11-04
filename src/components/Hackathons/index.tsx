@@ -10,25 +10,34 @@ function Hackathons() {
       <Box 
         p={2} 
         style={{
-          overflow: 'auto',
+          display: 'flex',
+          flexDirection: 'column',
           height: '100%',
+          justifyContent: 'center',
+          overflow: 'auto',
         }}
       >
-        <Grid container spacing={2}>
-          {
-            events.map((event) => (
-              <Event
-                key={event.name}
-                name={event.name}
-                description={event.description}
-                image={event.image}
-                collaborators={event.collaborators}
-                outcome={event.outcome}
-                github={event.github}
-              />
-            ))
-          }
-        </Grid>
+        <Box
+          style={{
+            maxHeight: '100%',
+          }}
+        >
+          <Grid container spacing={2}>
+            {
+              events.map((event) => (
+                <Event
+                  key={event.name}
+                  name={event.name}
+                  description={event.description}
+                  image={event.image}
+                  collaborators={event.collaborators}
+                  outcome={event.outcome}
+                  github={event.github}
+                />
+              ))
+            }
+          </Grid>
+        </Box>
       </Box>
     </BackgroundOverlay>
   );

@@ -32,7 +32,6 @@ function Event(props: EventProps) {
     return (
         <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
             <Card style={{
-                justifyContent: 'center',
                 backgroundColor: '#121212',
                 display: 'flex',
                 flexDirection: 'column',
@@ -58,7 +57,11 @@ function Event(props: EventProps) {
                     alt={name}
                     style={{ color: '#AAAAAA' }}
                 />
-                <CardContent>
+                <CardContent
+                    style={{
+                        marginTop: 'auto',
+                    }}
+                >
                     <Table>
                         <TableRow>
                             <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}><strong>Collaborators</strong></TableCell>
