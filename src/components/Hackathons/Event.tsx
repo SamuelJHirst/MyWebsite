@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
     Card,
     CardContent,
@@ -8,7 +7,7 @@ import {
     Table,
     TableCell,
     TableRow
-} from '@material-ui/core';
+} from '@mui/material';
 
 interface EventProps {
   name: string;

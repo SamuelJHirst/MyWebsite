@@ -1,0 +1,40 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.contact * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email * {
+    font-size: 150%;
+}
+
+.email a {
+    color: #FFF;
+    margin-left: 10;
+    position: relative;
+    text-decoration: none;
+    top: -5px;
+    transition: ease all 200ms;
+}
+
+.email a:hover {
+    color: #AAA;
+}

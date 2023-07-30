@@ -1,0 +1,27 @@
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.company h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.company * {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.company p a {
+    color: #FFF;
+    transition: ease all 200ms;
+}
+
+.company p a:hover {
+    color: #AAA;
+}

@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
     Card,
     CardActions,
@@ -10,9 +9,9 @@ import {
     Table,
     TableCell,
     TableRow
-} from '@material-ui/core';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+} from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 interface ProjectProps {
   name: string;

@@ -1,0 +1,21 @@
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #212121;
+    height: 100%;
+}
+
+.main {
+    background-color: #607d8b;
+    height: 100%;
+}
+
+.fab {
+    position: fixed;
+    top: 8;
+    left: 8;
+    opacity: 0.5;
+}
