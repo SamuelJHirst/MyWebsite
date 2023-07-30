@@ -8,7 +8,7 @@ import projects from './projects.json';
 
 function Software() {
     return (
-        <BackgroundOverlay src={background} alt="Stock photo of code">
+        <BackgroundOverlay src={background} alt="">
             <Box
                 p={2}
                 style={{

@@ -4,7 +4,7 @@ import background from './background.jpg';
 
 function Home() {
     return (
-        <BackgroundOverlay src={background} alt="Sam in Tanzania">
+        <BackgroundOverlay src={background} alt="">
             <div className="home">
                 <h1>Hi, I'm Sam.</h1>
                 <h2>Welcome to My Website!</h2>

@@ -5,7 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 function Contact() {
     return (
-        <BackgroundOverlay src={background} alt="A Street in Oxford">
+        <BackgroundOverlay src={background} alt="">
             <div className="contact">
                 <h1>Can I help?</h1>
                 <h2>Let me know if I can!</h2>

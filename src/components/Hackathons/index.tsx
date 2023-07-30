@@ -8,7 +8,7 @@ import events from './events.json';
 
 function Hackathons() {
     return (
-        <BackgroundOverlay src={background} alt="Lots of people coding at HackZurich 2022">
+        <BackgroundOverlay src={background} alt="">
             <Box
                 p={2}
                 style={{

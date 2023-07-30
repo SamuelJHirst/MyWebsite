@@ -4,7 +4,7 @@ import background from './background.jpg';
 
 function Music() {
     return (
-        <BackgroundOverlay src={background} alt="A Path in a Field">
+        <BackgroundOverlay src={background} alt="">
             <div className="music">
                 <h2>A Work in Progress...</h2>
                 <br />

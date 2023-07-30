@@ -15,7 +15,7 @@ interface BlogPost {
 
 function Blog() {
   return (
-    <BackgroundOverlay src={background} alt="Crook O'Lune Picnic Site">
+    <BackgroundOverlay src={background} alt="">
         <Box p={2} className="blog">
             {
                 (blog as BlogPost[]).map((post: BlogPost, index: number) => (

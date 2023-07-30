@@ -5,7 +5,7 @@ import background from './background.jpg';
 
 function About() {
     return (
-        <BackgroundOverlay src={background} alt="Scottish Parliament">
+        <BackgroundOverlay src={background} alt="">
             <div className="about">
                 <h2>A Bit About Me...</h2>
                 <br />

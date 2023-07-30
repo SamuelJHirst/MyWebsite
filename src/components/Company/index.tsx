@@ -4,7 +4,7 @@ import background from './background.jpg';
 
 function Company() {
     return (
-        <BackgroundOverlay src={background} alt="A Path in a Field">
+        <BackgroundOverlay src={background} alt="">
             <div className="company">
                 <h2>Introducing Naeviant Software...</h2>
                 <br />
