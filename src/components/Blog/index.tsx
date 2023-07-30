@@ -1,45 +1,81 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, ListItem, ListItemText } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import {
+    Accordion,
+    AccordionDetails,
+    AccordionSummary,
+    Box,
+    ListItem,
+    ListItemText,
+} from '@mui/material';
+import {
+    ExpandMore as ExpandMoreIcon
+} from '@mui/icons-material';
 
 import BackgroundOverlay from '../common/BackgroundOverlay';
 
 import './Blog.css';
-import blog from './blog.json';
 import background from './background.jpg';
+import blog from './blog.json';
 
 interface BlogPost {
-    title: string;
+    content: [string];
     date: string;
-    post: [string];
+    title: string;
 }
 
 function Blog() {
-  return (
-    <BackgroundOverlay src={background} alt="">
-        <Box p={2} className="blog">
-            {
-                (blog as BlogPost[]).map((post: BlogPost, index: number) => (
-                    <Accordion key={index} className="header">
-                        <AccordionSummary expandIcon={<ExpandMoreIcon className="primary" />}>
-                            <ListItem>
-                                <ListItemText primary={post.title} secondary={post.date} classes={{primary: "primary", secondary: "secondary"}}></ListItemText>
-                            </ListItem>
-                        </AccordionSummary>
-                        <Box p={2} pt={0}>
-                            {
-                                post.post.map((paragraph: string, index: number) => (
-                                    <AccordionDetails key={index} className="paragraph">
-                                        {paragraph}
-                                    </AccordionDetails>
-                                ))
-                            }
-                        </Box>
-                    </Accordion>
-                ))
-            }
-        </Box>
-    </BackgroundOverlay>
-  );
+    return (
+        <BackgroundOverlay
+            src={background}
+        >
+            <Box
+                className="blog"
+                p={2}
+            >
+                {
+                    (blog as BlogPost[]).map((post: BlogPost, index: number) => (
+                        <Accordion
+                            className="header"
+                            key={index}
+                        >
+                            <AccordionSummary
+                                expandIcon={
+                                    <ExpandMoreIcon
+                                        className="primary"
+                                    />
+                                }
+                            >
+                                <ListItem>
+                                    <ListItemText
+                                        classes={{
+                                            primary: "primary",
+                                            secondary: "secondary",
+                                        }}
+                                        primary={post.title}
+                                        secondary={post.date}
+                                    />
+                                </ListItem>
+                            </AccordionSummary>
+                            <Box
+                                p={2}
+                                pt={0}
+                            >
+                                {
+                                    post.content.map((paragraph: string, index: number) => (
+                                        <AccordionDetails
+                                            className="paragraph"
+                                            key={index}
+                                        >
+                                            {paragraph}
+                                        </AccordionDetails>
+                                    ))
+                                }
+                            </Box>
+                        </Accordion>
+                    ))
+                }
+            </Box>
+        </BackgroundOverlay>
+    );
 }
 
 export default Blog;

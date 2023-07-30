@@ -1,4 +1,7 @@
-import { Box, Grid } from '@mui/material';
+import {
+    Box,
+    Grid,
+} from '@mui/material';
 
 import BackgroundOverlay from '../common/BackgroundOverlay';
 import Event from './Event';
@@ -8,7 +11,9 @@ import events from './events.json';
 
 function Hackathons() {
     return (
-        <BackgroundOverlay src={background} alt="">
+        <BackgroundOverlay
+            src={background}
+        >
             <Box
                 p={2}
                 style={{
@@ -24,17 +29,20 @@ function Hackathons() {
                         maxHeight: '100%',
                     }}
                 >
-                    <Grid container spacing={2}>
+                    <Grid
+                        container
+                        spacing={2}
+                    >
                         {
                             events.map((event) => (
                                 <Event
-                                    key={event.name}
-                                    name={event.name}
-                                    description={event.description}
-                                    image={event.image}
                                     collaborators={event.collaborators}
-                                    outcome={event.outcome}
+                                    description={event.description}
                                     github={event.github}
+                                    key={event.name}
+                                    image={event.image}
+                                    name={event.name}
+                                    outcome={event.outcome}
                                 />
                             ))
                         }

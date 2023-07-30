@@ -1,4 +1,4 @@
-import { 
+import {
     Card,
     CardActions,
     CardContent,
@@ -8,103 +8,179 @@ import {
     IconButton,
     Table,
     TableCell,
-    TableRow
+    TableRow,
 } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import {
+    GitHub as GitHubIcon,
+    OpenInNew as OpenInNewIcon,
+} from '@mui/icons-material';
 
 interface ProjectProps {
-  name: string;
-  description: string;
-  image: string | null;
-  status: string;
-  language: string;
-  dates: string;
-  github: string | null;
-  demo: string | null;
+    dates: string;
+    demo: string | null;
+    description: string;
+    github: string | null;
+    image: string | null;
+    language: string;
+    name: string;
+    status: string;
 }
 
 function Project(props: ProjectProps) {
     const {
-        name,
-        description,
-        image,
-        status,
-        language,
         dates,
+        demo,
+        description,
         github,
-        demo
+        image,
+        language,
+        name,
+        status,
     } = props;
 
     return (
-        <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
-            <Card style={{ backgroundColor: '#121212', height: '100%' }}>
+        <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={4}
+            xl={4}
+        >
+            <Card
+                style={{
+                    backgroundColor: '#121212',
+                    height: '100%',
+                }}
+            >
                 <CardHeader
-                    title={name}
                     subheader={description}
-                    titleTypographyProps={{
-                        style: {
-                            color: '#EEEEEE'
-                        }
-                    }}
                     subheaderTypographyProps={{
                         style: {
-                            color: '#AAAAAA'
+                            color: '#AAAAAA',
+                        }
+                    }}
+                    title={name}
+                    titleTypographyProps={{
+                        style: {
+                            color: '#EEEEEE',
                         }
                     }}
                 />
-                <CardMedia 
+                <CardMedia
+                    alt={name}
                     component="img"
                     image={`/${image}`}
-                    alt={name}
-                    style={{ color: '#AAAAAA' }}
+                    style={{
+                        color: '#AAAAAA',
+                    }}
                 />
                 <CardContent>
                     <Table>
                         <TableRow>
-                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}><strong>Status</strong></TableCell>
-                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}>{status}</TableCell>
+                            <TableCell
+                                style={{
+                                    borderBottom: 'none',
+                                    color: '#EEEEEE',
+                                    padding: '4px',
+                                }}
+                            >
+                                <strong>
+                                    Status
+                                </strong>
+                            </TableCell>
+                            <TableCell
+                                style={{
+                                    borderBottom: 'none',
+                                    color: '#EEEEEE',
+                                    padding: '4px',
+                                }}
+                            >
+                                {status}
+                            </TableCell>
                         </TableRow>
                         <TableRow>
-                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}><strong>Language</strong></TableCell>
-                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}>{language}</TableCell>
+                            <TableCell
+                                style={{
+                                    borderBottom: 'none',
+                                    color: '#EEEEEE',
+                                    padding: '4px',
+                                }}
+                            >
+                                <strong>
+                                    Language
+                                </strong>
+                            </TableCell>
+                            <TableCell
+                                style={{
+                                    borderBottom: 'none',
+                                    color: '#EEEEEE',
+                                    padding: '4px',
+                                }}
+                            >
+                                {language}
+                            </TableCell>
                         </TableRow>
                         <TableRow>
-                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}><strong>Start/End Date</strong></TableCell>
-                            <TableCell style={{ borderBottom: 'none', color: '#EEEEEE', padding: '4px' }}>{dates}</TableCell>
+                            <TableCell
+                                style={{
+                                    borderBottom: 'none',
+                                    color: '#EEEEEE',
+                                    padding: '4px',
+                                }}
+                            >
+                                <strong>
+                                    Start/End Date
+                                </strong>
+                            </TableCell>
+                            <TableCell
+                                style={{
+                                    borderBottom: 'none',
+                                    color: '#EEEEEE',
+                                    padding: '4px',
+                                }}
+                            >
+                                {dates}
+                            </TableCell>
                         </TableRow>
                     </Table>
                 </CardContent>
                 <CardActions>
                     {
                         github
-                        ?
-                            <IconButton 
-                                href={github} 
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ color: '#AAAAAA' }}
-                            >
-                                <GitHubIcon />
-                            </IconButton>
-                        : null
+                            ? (
+                                <IconButton
+                                    href={github}
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        color: '#AAAAAA',
+                                    }}
+                                    target="_blank"
+                                >
+                                    <GitHubIcon />
+                                </IconButton>
+                            )
+                            : null
                     }
                     {
                         demo
-                        ?
-                            <IconButton 
-                                href={demo} 
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ color: '#AAAAAA' }}
-                            >
-                                <OpenInNewIcon />
-                            </IconButton>
-                        : null
+                            ? (
+                                <IconButton
+                                    href={demo}
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        color: '#AAAAAA',
+                                    }}
+                                    target="_blank"
+                                >
+                                    <OpenInNewIcon />
+                                </IconButton>
+                            )
+                            : null
                     }
                 </CardActions>
             </Card>
-        </Grid> 
+        </Grid>
     )
 }
 

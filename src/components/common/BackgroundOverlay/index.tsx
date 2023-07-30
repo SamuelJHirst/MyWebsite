@@ -1,19 +1,33 @@
 import './BackgroundOverlay.css';
 
 interface BackgroundOverlayProps {
-    src: any;
-    alt: string;
-    children: any;
+    children: React.ReactNode;
+    src: string;
 }
 
 function BackgroundOverlay(props: BackgroundOverlayProps) {
-    const { src, alt, children } = props;
+    const {
+        children,
+        src,
+    } = props;
 
     return (
-        <div className="backgroundOverlay">
-            <img src={src} alt={alt} className="background" />
-            <div className="overlay"></div>
-            <div className="content">{children}</div>
+        <div
+            className="backgroundOverlay"
+        >
+            <img
+                alt=""
+                className="background"
+                src={src}
+            />
+            <div
+                className="overlay"
+            />
+            <div
+                className="content"
+            >
+                {children}
+            </div>
         </div>
     );
 }

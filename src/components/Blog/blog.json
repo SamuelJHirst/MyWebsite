@@ -2,7 +2,7 @@
     {
         "title": "5 Months Later...",
         "date": "Friday 4th February 2022",
-        "post": [
+        "content": [
             "When I wrote my first blog post on this website, I concluded by saying that I may write more posts in the future, or may allow this section to quietly disappear from the site. It's been nearly five months since I wrote that, and it seems about time I posted something new. So, here are some updates!",
             "I'm continuing to upgrade some of my previous projects. Much like I did for this website, I have upgraded my \"Higher or Lower\" cards game and Tanzania blog from ExpressJS with Swig to ReactJS. I've also changed my link shortening service to use Handlebars, but kept the ExpressJS framework. These projects now also use TypeScript for additional improvements. Links to all of these projects are available in the \"Software\" section of this website.",
             "That leads me nicely into my next section. I now have some decent code to show off on this website! As I publish this post, I'll also be removing the placeholder \"Software\" page and replacing it with some information and links to my work. I will be aiming to keep the content of this page quite diverse. Previously it contained a lot of JavaScript web applications, but this time I've got some exciting projects to talk about - such as a Snakes & Ladders game engine written in Java, a course unit review system written in PHP and a Pokemon-style game written in Python.",
@@ -16,7 +16,7 @@
     {
         "title": "\"Things Change Quickly\"",
         "date": "Sunday 5th September 2021",
-        "post": [
+        "content": [
             "When I first started to pursue a career in Computer Science, I was given a clear warning: things change quickly and its important to keep your skills up to date. It’s a statement I agree with and something I’ve always tried to keep in mind. I was reminded of this when I was recently doing some routine work on my web server and noticed that one of the key packages for my website’s landing page is no longer maintained. This package (Swig) was also causing security vulnerabilities in the website.",
             "I had a think about what to do about this. Swig is quite a key module in the website’s inner workings (it is responsible for generating the HTML which is rendered in the browser) and so it wouldn’t be particularly easy to change. But then I thought back to some job adverts I looked through, and not one was asking for a website with server-side rendering written in NodeJS. It’s now all TypeScript, React and the like. So, I decided to modernise my website.",
             "And here it is! Now it is written in React and Typescript. It comes with a persistent sidebar which contains all the key information about me, while also including the navigation. Despite these changes, the core focus of the website remains the same: to show off my past work. But, this time I’ve tried to expand into other areas such as music and this blog.",
