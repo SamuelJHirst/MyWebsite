@@ -7,6 +7,7 @@ import {
     Grid,
     IconButton,
     Table,
+    TableBody,
     TableCell,
     TableRow,
 } from '@mui/material';
@@ -77,72 +78,75 @@ function Project(props: ProjectProps) {
                 />
                 <CardContent>
                     <Table>
-                        <TableRow>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                <strong>
-                                    Status
-                                </strong>
-                            </TableCell>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                {status}
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                <strong>
-                                    Language
-                                </strong>
-                            </TableCell>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                {language}
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                <strong>
-                                    Start/End Date
-                                </strong>
-                            </TableCell>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                {dates}
-                            </TableCell>
-                        </TableRow>
+                        <TableBody>
+
+                            <TableRow>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                    }}
+                                >
+                                    <strong>
+                                        Status
+                                    </strong>
+                                </TableCell>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                    }}
+                                >
+                                    {status}
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                    }}
+                                >
+                                    <strong>
+                                        Language
+                                    </strong>
+                                </TableCell>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                    }}
+                                >
+                                    {language}
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                    }}
+                                >
+                                    <strong>
+                                        Start/End Date
+                                    </strong>
+                                </TableCell>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                    }}
+                                >
+                                    {dates}
+                                </TableCell>
+                            </TableRow>
+                        </TableBody>
                     </Table>
                 </CardContent>
                 <CardActions>

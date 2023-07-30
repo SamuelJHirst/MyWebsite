@@ -5,6 +5,7 @@ import {
     CardMedia,
     Grid,
     Table,
+    TableBody,
     TableCell,
     TableRow,
 } from '@mui/material';
@@ -73,85 +74,87 @@ function Event(props: EventProps) {
                     }}
                 >
                     <Table>
-                        <TableRow>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                <strong>
-                                    Collaborators
-                                </strong>
-                            </TableCell>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                {collaborators}
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
-                                }}
-                            >
-                                <strong>
-                                    Outcome
-                                </strong>
-                            </TableCell>
-                            <TableCell
-                                style={{
-                                    borderBottom: 'none',
-                                    color: '#EEEEEE',
-                                    padding: '4px',
+                        <TableBody>
+                            <TableRow>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
                                     }}
-                            >
-                                {outcome}
-                            </TableCell>
-                        </TableRow>
-                        {
-                            github
-                                ? (
-                                    <TableRow>
-                                        <TableCell
-                                            style={{
-                                                borderBottom: 'none',
-                                                color: '#EEEEEE',
-                                                padding: '4px'
-                                            }}
-                                        >
-                                            <strong>
-                                                Code
-                                            </strong>
-                                        </TableCell>
-                                        <TableCell
-                                            style={{
-                                                borderBottom: 'none',
-                                                color: '#EEEEEE',
-                                                padding: '4px'
-                                            }}
-                                        >
-                                            <a
-                                                href={github}
-                                                rel="noopener noreferrer"
-                                                style={{ color: '#EEEEEE' }}
-                                                target="_blank"
+                                >
+                                    <strong>
+                                        Collaborators
+                                    </strong>
+                                </TableCell>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                    }}
+                                >
+                                    {collaborators}
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                    }}
+                                >
+                                    <strong>
+                                        Outcome
+                                    </strong>
+                                </TableCell>
+                                <TableCell
+                                    style={{
+                                        borderBottom: 'none',
+                                        color: '#EEEEEE',
+                                        padding: '4px',
+                                        }}
+                                >
+                                    {outcome}
+                                </TableCell>
+                            </TableRow>
+                            {
+                                github
+                                    ? (
+                                        <TableRow>
+                                            <TableCell
+                                                style={{
+                                                    borderBottom: 'none',
+                                                    color: '#EEEEEE',
+                                                    padding: '4px'
+                                                }}
                                             >
-                                                GitHub
-                                            </a>
-                                        </TableCell>
-                                    </TableRow>
-                                )
-                                : null
-                        }
+                                                <strong>
+                                                    Code
+                                                </strong>
+                                            </TableCell>
+                                            <TableCell
+                                                style={{
+                                                    borderBottom: 'none',
+                                                    color: '#EEEEEE',
+                                                    padding: '4px'
+                                                }}
+                                            >
+                                                <a
+                                                    href={github}
+                                                    rel="noopener noreferrer"
+                                                    style={{ color: '#EEEEEE' }}
+                                                    target="_blank"
+                                                >
+                                                    GitHub
+                                                </a>
+                                            </TableCell>
+                                        </TableRow>
+                                    )
+                                    : null
+                            }
+                        </TableBody>
                     </Table>
                 </CardContent>
             </Card>

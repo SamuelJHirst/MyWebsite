@@ -14,8 +14,8 @@
 }
 
 .fab {
-    position: fixed;
-    top: 8;
-    left: 8;
+    position: fixed !important;
+    top: 8px !important;
+    left: 8px !important;
     opacity: 0.5;
 }
