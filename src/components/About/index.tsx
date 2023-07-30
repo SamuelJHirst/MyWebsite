@@ -39,13 +39,13 @@ function About() {
                     and other routes which helped them to build a career.
                 </p>
                 <p>
-                    I make use of that experience in my new job in which I help a number of young
-                    people with special educational needs and disabilities to learn coding skills
-                    at the Digital Independent Skills College in Manchester.
+                    I then make use of that experience in a different job in which I helped a
+                    number of young people with special educational needs and disabilities to learn
+                    coding skills at the Digital Independent Skills College in Manchester.
                 </p>
                 <p>
-                    I also work as a Part Time Undergraduate DevOps Engineer at Arm, as well as
-                    running my own software engineering company: Naeviant Software.
+                    I now work as a Part Time Undergraduate (Intern) at Arm, where I currently work
+                    on a DevOps team.
                 </p>
                 <p>
                     This website is designed to document the projects that I do outside of

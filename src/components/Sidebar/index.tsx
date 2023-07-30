@@ -7,7 +7,7 @@ import {
     Typography,
 } from '@mui/material';
 import {
-    Email as EmailIcon,
+    // Email as EmailIcon,
     GitHub as GitHubIcon,
     LinkedIn as LinkedInIcon,
 } from '@mui/icons-material';
@@ -76,7 +76,7 @@ function Sidebar(props: SidebarProps) {
             >
                 Sam Hirst
             </Typography>
-            <div
+            {/* <div
                 className="email"
             >
                 <EmailIcon />
@@ -85,7 +85,7 @@ function Sidebar(props: SidebarProps) {
                 >
                     sam@hirst.me
                 </a>
-            </div>
+            </div> */}
             <Divider />
             <ButtonGroup
                 className="buttons"
@@ -128,18 +128,18 @@ function Sidebar(props: SidebarProps) {
                 >
                     Blog
                 </Button> */}
-                <Button
+                {/* <Button
                     onClick={onClick}
                     variant={page === 6 ? 'contained' : 'outlined'}
                 >
                     Company
-                </Button>
-                <Button
+                </Button> */}
+                {/* <Button
                     onClick={onClick}
                     variant={page === 7 ? 'contained' : 'outlined'}
                 >
                     Contact
-                </Button>
+                </Button> */}
             </ButtonGroup>
             <Divider />
             <div
