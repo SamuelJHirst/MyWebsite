@@ -32,6 +32,9 @@ function Hackathons() {
                     <Grid
                         container
                         spacing={2}
+                        style={{
+                            paddingBottom: '16px',
+                        }}
                     >
                         {
                             events.map((event) => (

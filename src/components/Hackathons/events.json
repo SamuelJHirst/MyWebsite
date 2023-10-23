@@ -1,5 +1,13 @@
 [
     {
+        "name": "HackZurich 2023",
+        "description": "We created BraveGuard: an AI-powered app to improve a customer's interactions with their insurance company.",
+        "image": "hackzurich-23.png",
+        "collaborators": "Didem İştar, Ishwor Giri & Quan Zheng",
+        "outcome": "Category Winner",
+        "github": null
+    },
+    {
         "name": "GreatUniHack 2022",
         "description": "We created JustPhish: a game to demonstrate how powerful AI can be in creating misinformation.",
         "image": "justphish.jpg",
